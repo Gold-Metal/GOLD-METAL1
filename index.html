@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GOLD METAL | Premium Altın Eleme Ekipmanları</title>
+  <meta name="description" content="GOLD METAL kalitesiyle üretilmiş dayanıklı ve hafif altın eleme ekipmanları. Doğada altın arama hobisi için ideal çözümler.">
+  <meta name="keywords" content="altın eleme, altın arama, derede altın arama, savak sistemi, motorlu savak, sulice box, gold metal, kırıntı altın, dere madenciliği, altın eleme ekipmanı, taşınabilir savak, alüminyum savak, altın arama hobisi, altın arama seti, altın eleme kutusu, sintine pompası, doğada altın arama, hobi madenciliği, altın yıkama, altın eleme tekniği, altın arama ekipmanları, dere yatağında altın, altın arama makinesi, altın eleme sistemi, altın arama malzemeleri">
+  <link rel="icon" href="https://64.media.tumblr.com/c8a2f0b83b63adef6f4bd0ba29de5180/30b24c22617e32d9-04/s1280x1920/5d1e541cc557a65e52c96910aba89ae3f5ba2a84.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    :root {
+      --gold: #bfa100;
+      --dark-gold: #9c8100;
+      --light-gold: #ffecb3;
+      --dark: #1a2a0f;
+      --medium: #2c3e11;
+      --light: #f8f8f0;
+      --text: #333;
+      --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--light);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+      background: linear-gradient(135deg, #f8f8f0, #e8e8d8);
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    /* Header Styles */
+    header {
+      background: linear-gradient(135deg, var(--dark), var(--medium));
+      padding: 20px 0;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+    
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    
+    .logo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid var(--gold);
+      box-shadow: 0 0 20px rgba(191, 161, 0, 0.5);
+      background: #000;
+      overflow: hidden;
+      padding: 5px;
+    }
+    
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    
+    .brand-text {
+      color: white;
+    }
+    
+    .brand-text h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.4rem;
+      margin-bottom: 5px;
+      color: var(--gold);
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    
+    .brand-text p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      color: #d9d9d9;
+    }
+    
+    /* Navigation */
+    nav {
+      background: linear-gradient(to right, var(--medium), var(--dark));
+      border-radius: 8px;
+      margin: 15px 0;
+      box-shadow: var(--shadow);
+    }
+    
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      flex-wrap: wrap;
+    }
+    
+    nav ul li {
+      margin: 5px;
+    }
+    
+    nav ul li a {
+      display: block;
+      padding: 15px 25px;
+      color: var(--gold);
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+      position: relative;
+      border-radius: 8px;
+    }
+    
+    nav ul li a:hover {
+      color: #fff;
+      background: rgba(191, 161, 0, 0.2);
+    }
+    
+    nav ul li a::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 3px;
+      background: var(--gold);
+      transition: width 0.3s ease;
+    }
+    
+    nav ul li a:hover::after {
+      width: 70%;
+    }
+    
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, var(--dark), var(--medium));
+      padding: 80px 0;
+      text-align: center;
+      color: white;
+      border-radius: 12px;
+      margin: 30px 0;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle, transparent 20%, #1d2e0f 90%), 
+                  linear-gradient(to right, transparent, rgba(191, 161, 0, 0.1), transparent);
+      pointer-events: none;
+    }
+    
+    .hero h2 {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+      color: var(--gold);
+    }
+    
+    .hero p {
+      font-size: 1.3rem;
+      max-width: 800px;
+      margin: 0 auto 30px;
+    }
+    
+    .cta-button {
+      display: inline-block;
+      padding: 15px 35px;
+      background: var(--gold);
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      border: 2px solid var(--dark-gold);
+    }
+    
+    .cta-button:hover {
+      background: var(--dark-gold);
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    }
+    
+    /* Main Content */
+    main {
+      padding: 20px 0;
+    }
+    
+    section {
+      background: white;
+      border-radius: 15px;
+      padding: 40px;
+      margin-bottom: 40px;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(191, 161, 0, 0.3);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      background: linear-gradient(to right, var(--gold), var(--dark-gold));
+    }
+    
+    h2 {
+      color: var(--dark);
+      font-size: 2rem;
+      margin-bottom: 25px;
+      position: relative;
+      padding-bottom: 15px;
+      font-family: 'Playfair Display', serif;
+    }
+    
+    h2::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100px;
+      height: 3px;
+      background: linear-gradient(to right, var(--gold), var(--dark-gold));
+    }
+    
+    /* Image Gallery */
+    .image-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin: 40px 0;
+    }
+    
+    .gallery-item {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      border: 2px solid var(--light-gold);
+      transition: all 0.3s ease;
+      position: relative;
+    }
+    
+    .gallery-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+      border-color: var(--gold);
+    }
+    
+    .gallery-item img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      display: block;
+    }
+    
+    .gallery-caption {
+      padding: 15px;
+      text-align: center;
+      font-size: 1.1rem;
+      color: var(--dark);
+      font-weight: 500;
+      background: var(--light-gold);
+    }
+    
+    /* Content Sections */
+    .content-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+    
+    .content-card {
+      background: white;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--light-gold);
+      transition: transform 0.3s ease;
+    }
+    
+    .content-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .content-card h3 {
+      color: var(--gold);
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .content-card h3 i {
+      color: var(--dark-gold);
+    }
+    
+    .callout {
+      background: rgba(191, 161, 0, 0.1);
+      border-left: 4px solid var(--gold);
+      padding: 25px;
+      border-radius: 0 12px 12px 0;
+      margin: 35px 0;
+      font-size: 1.1rem;
+      color: var(--text);
+    }
+    
+    .callout strong {
+      color: var(--dark-gold);
+    }
+    
+    /* Technical Specifications */
+    .specs-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 25px;
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+    
+    .specs-table th, .specs-table td {
+      padding: 15px;
+      text-align: left;
+      border-bottom: 1px solid #eee;
+    }
+    
+    .specs-table th {
+      background: var(--gold);
+      color: white;
+      font-weight: 600;
+    }
+    
+    .specs-table tr:nth-child(even) {
+      background: var(--light-gold);
+    }
+    
+    /* FAQ Section */
+    details {
+      margin-bottom: 15px;
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+      border: 1px solid #eee;
+    }
+    
+    details summary {
+      cursor: pointer;
+      font-weight: bold;
+      padding: 20px;
+      background: var(--light-gold);
+      font-size: 1.1rem;
+      position: relative;
+      list-style: none;
+    }
+    
+    details summary::after {
+      content: "+";
+      position: absolute;
+      right: 20px;
+      font-size: 1.5rem;
+      transition: transform 0.3s;
+    }
+    
+    details[open] summary::after {
+      transform: rotate(45deg);
+    }
+    
+    details p {
+      padding: 20px;
+      color: var(--text);
+    }
+    
+    /* Footer */
+    footer {
+      background: linear-gradient(to right, var(--dark), var(--medium));
+      padding: 40px 0;
+      text-align: center;
+      color: white;
+      position: relative;
+      margin-top: 50px;
+      border-top: 3px solid var(--gold);
+    }
+    
+    footer::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(to right, transparent, var(--gold), transparent);
+    }
+    
+    footer p {
+      margin-bottom: 25px;
+      font-size: 1.1rem;
+    }
+    
+    .social-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+    
+    .social-buttons a {
+      display: flex;
+      align-items: center;
+      padding: 12px 25px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .social-buttons a i {
+      margin-right: 10px;
+      font-size: 1.2rem;
+    }
+    
+    .whatsapp {
+      background: linear-gradient(to right, #25D366, #128C7E);
+      color: white;
+    }
+    
+    .telegram {
+      background: linear-gradient(to right, #0088cc, #2AABEE);
+      color: white;
+    }
+    
+    .tiktok {
+      background: linear-gradient(to right, #010101, #333);
+      color: white;
+    }
+    
+    .social-buttons a:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+    }
+    
+    .copyright {
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .header-content {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .logo-container {
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+      
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      nav ul li a {
+        padding: 12px 20px;
+      }
+      
+      .hero h2 {
+        font-size: 2.2rem;
+      }
+      
+      section {
+        padding: 30px 20px;
+      }
+      
+      .image-gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .fade-in {
+      animation: fadeIn 0.8s ease-out;
+    }
+    
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+    
+    .pulse {
+      animation: pulse 2s infinite;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-content">
+        <div class="logo-container">
+          <div class="logo">
+            <img src="https://64.media.tumblr.com/c8a2f0b83b63adef6f4bd0ba29de5180/30b24c22617e32d9-04/s1280x1920/5d1e541cc557a65e52c96910aba89ae3f5ba2a84.jpg" alt="GOLD METAL Logo">
+          </div>
+          <div class="brand-text">
+            <h1>GOLD METAL</h1>
+            <p>Premium Altın Eleme Ekipmanları</p>
+          </div>
+        </div>
+        
+        <nav>
+          <ul>
+            <li><a href="gold-metal.html"><i class="fas fa-home"></i> Anasayfa</a></li>
+            <li><a href="sulice-box.html"><i class="fas fa-shopping-cart"></i> Ürünler</a></li>
+            <li><a href="iletisim.html"><i class="fas fa-envelope"></i> İletişim</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+    <div class="hero fade-in">
+      <div class="container">
+        <h2>Doğadaki Altınlarınızı Keşfedin!</h2>
+        <p>Profesyonel altın eleme ekipmanlarımızla doğanın gizli hazinelerini ortaya çıkarın. Hafif, dayanıklı ve yüksek verimli ekipmanlarımız hobi madenciliğinizi bir üst seviyeye taşıyacak.</p>
+        <a href="sulice-box.html" class="cta-button pulse">Ürünleri İncele <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+    
+    <main class="container">
+      <section class="fade-in">
+        <h2><i class="fas fa-gem"></i> Altın Arama Hobisi</h2>
+        <p>Derelerde kırıntı altın aramak, doğa ile iç içe vakit geçirirken küçük altın parçacıklarını bulmayı amaçlayan keyifli ve öğretici bir hobidir.</p>
+        
+        <div class="content-grid">
+          <div class="content-card">
+            <h3><i class="fas fa-tree"></i> Doğayla İç İçe</h3>
+            <p>Doğada vakit geçirmek ve yeni yerler keşfetmek için harika bir fırsattır. Altın arama aktivitesi sizi şehrin gürültüsünden uzaklaştırırken, doğanın sessizliğiyle baş başa kalmanızı sağlar.</p>
+          </div>
+          
+          <div class="content-card">
+            <h3><i class="fas fa-user-graduate"></i> Öğretici Deneyim</h3>
+            <p>Altın arama sabır, dikkat ve doğru ekipman gerektirir. Bu süreçte jeoloji, akışkan dinamiği ve tarih hakkında birçok şey öğrenebilirsiniz.</p>
+          </div>
+          
+          <div class="content-card">
+            <h3><i class="fas fa-leaf"></i> Doğaya Saygılı</h3>
+            <p>Çevreye zarar vermeden, doğaya saygılı şekilde yapılmalıdır. GOLD METAL ekipmanları minimum çevresel etki ile maksimum verim sağlamak için tasarlanmıştır.</p>
+          </div>
+        </div>
+        
+        <div class="callout">
+          <strong>Önemli Not:</strong> GOLD MONSTER Cihazımız, doğada altın arama hobisini daha keyifli ve verimli hale getirmek için özel olarak tasarlanmıştır. Ekipmanlarımız, hafif alüminyum yapısı ve yüksek verimliliği ile dikkat çekmektedir.
+        </div>
+      </section>
+      
+      <section class="fade-in">
+        <h2><i class="fas fa-images"></i> Doğal Altın Örnekleri</h2>
+        <p>Doğada bulunan altın örnekleri ve GOLD METAL ekipmanlarıyla nasıl daha verimli sonuçlar alabileceğinizi keşfedin:</p>
+        
+        <div class="image-gallery">
+          <div class="gallery-item">
+            <img src="https://64.media.tumblr.com/ef3290d71c781436ae2c5d24864105d2/0cce1380112f7753-a4/s250x400/8f81791e6126ea44734abac1afe0cb09d372a9cb.jpg" alt="Doğal Altın Örneği - Kuvars İçinde">
+            <div class="gallery-caption">Kuvars Kaya İçinde Doğal Altın</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://64.media.tumblr.com/a2bfabcb22f14ab4cdacdfade5adc3b7/ecd8e77b36e1bb45-90/s250x400/df6d8481875c72268f8cb44af7b7634845bb2a83.jpg" alt="Ham Altın Parçaları">
+            <div class="gallery-caption">Nehir Yatağında Bulunan Ham Altın</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://64.media.tumblr.com/6a2ffd61c8529387a7f2f4b416923a95/9f414f4672f7a770-bb/s400x600/a07aee0b3f3cd025ced6525258aa6e5cc324eeba.jpg" alt="Altın Damarları">
+            <div class="gallery-caption">Kaya Formasyonundaki Altın Damarları</div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="fade-in">
+        <h2><i class="fas fa-cogs"></i> Teknik Özellikler</h2>
+        <p>GOLD METAL ekipmanları, en zorlu doğa koşullarında bile üstün performans sunacak şekilde tasarlanmıştır:</p>
+        
+        <table class="specs-table">
+          <tr>
+            <th>Özellik</th>
+            <th>Detay</th>
+          </tr>
+          <tr>
+            <td>Gövde Malzemesi</td>
+            <td>Hafif Alüminyum (Dayanıklı ve Korozyona Dayanıklı)</td>
+          </tr>
+          <tr>
+            <td>Pompa Uyumu</td>
+            <td>Sintine Pompası ile Tam Uyum (Akü Hariç)</td>
+          </tr>
+          <tr>
+            <td>Ağırlık</td>
+            <td>Motorla Birlikte Sadece 8.5 kg</td>
+          </tr>
+          <tr>
+            <td>Verimlilik</td>
+            <td>Saatte 1-2 Ton Kum İşleme Kapasitesi</td>
+          </tr>
+        </table>
+      </section>
+      
+      <section class="fade-in">
+        <h2><i class="fas fa-question-circle"></i> Sıkça Sorulan Sorular</h2>
+        <p>GOLD METAL ürünleri hakkında en çok merak edilen sorular ve cevapları:</p>
+        
+        <details>
+          <summary>Yeni başlayanlar için önerileriniz nedir?</summary>
+          <p>Basit bir eleme kutusu ve tava ile başlayabilirsiniz. Sabırlı olun, doğayı gözlemleyin ve çevreye zarar vermemeye özen gösterin. GOLD METAL başlangıç setleri, yeni başlayanlar için ideal çözümler sunar.</p>
+        </details>
+        
+        <details>
+          <summary>Kargo süresi nedir?</summary>
+          <p>Türkiye içi siparişler 2-4 iş günü içinde teslim edilir.</p>
+        </details>
+        
+        <details>
+          <summary>Ürün garantisi var mı?</summary>
+          <p>Evet, tüm GOLD METAL ürünleri 30 günlük üretici garantisi kapsamındadır. Garanti kapsamı üretim hatalarını ve malzeme kusurlarını içerir. Kişisel kullanımdan kaynaklanan hasarlar garanti kapsamı dışındadır.</p>
+        </details>
+        
+        <details>
+          <summary>Nasıl temizlik yapmalıyım?</summary>
+          <p>Ekipmanlarınızı kullandıktan sonra temiz suyla yıkayın ve kurumasını bekleyin. Özellikle hareketli parçalarda kum birikmesini önlemek için düzenli temizlik önemlidir. Kesinlikle kimyasal temizleyici kullanmayın.</p>
+        </details>
+        
+        <details>
+          <summary>Hangi bölgelerde altın aramak daha verimli?</summary>
+          <p>Akarsu yatakları, eski nehir yolları ve kuvars damarlarının bulunduğu bölgeler altın arama için idealdir. Türkiye'de özellikle Ege, Doğu Anadolu ve Karadeniz bölgelerinde verimli sonuçlar alınmaktadır.</p>
+        </details>
+      </section>
+    </main>
+    
+    <footer>
+      <div class="container">
+        <div class="social-buttons">
+          <a href="https://wa.me/905315003285" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+          <a href="https://t.me/Aykut4181" target="_blank" class="telegram"><i class="fab fa-telegram"></i> Telegram</a>
+          <a href="https://www.tiktok.com/@goldmetal81" target="_blank" class="tiktok"><i class="fab fa-tiktok"></i> TikTok</a>
+        </div>
+        
+        <p>GOLD METAL, doğaya saygılı ve çevre dostu üretim anlayışıyla altın arama ekipmanları sunar.</p>
+        
+        <div class="copyright">
+          <p>&copy; 2025 GOLD METAL Ürünleri – Tüm hakları saklıdır.</p>
+          <p>Altın arama hobisi, yerel yönetmeliklere uygun olarak yapılmalıdır.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  
+  <script>
+    // Animasyonları tetiklemek için basit bir JavaScript
+    document.addEventListener('DOMContentLoaded', function() {
+      const fadeElements = document.querySelectorAll('.fade-in');
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = 1;
+            entry.target.style.transform = 'translateY(0)';
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.1
+      });
+      
+      fadeElements.forEach(element => {
+        element.style.opacity = 0;
+        element.style.transform = 'translateY(20px)';
+        element.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+        observer.observe(element);
+      });
+    });
+  </script>
+</body>
+</html>

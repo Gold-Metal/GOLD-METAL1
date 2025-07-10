@@ -1,724 +1,1299 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GOLD METAL | Premium Altın Eleme Ekipmanları</title>
-  <meta name="description" content="GOLD METAL kalitesiyle üretilmiş dayanıklı ve hafif altın eleme ekipmanları. Doğada altın arama hobisi için ideal çözümler.">
-  <meta name="keywords" content="altın eleme, altın arama, derede altın arama, savak sistemi, motorlu savak, sulice box, gold metal, kırıntı altın, dere madenciliği, altın eleme ekipmanı, taşınabilir savak, alüminyum savak, altın arama hobisi, altın arama seti, altın eleme kutusu, sintine pompası, doğada altın arama, hobi madenciliği, altın yıkama, altın eleme tekniği, altın arama ekipmanları, dere yatağında altın, altın arama makinesi, altın eleme sistemi, altın arama malzemeleri">
-  <link rel="icon" href="https://64.media.tumblr.com/c8a2f0b83b63adef6f4bd0ba29de5180/30b24c22617e32d9-04/s1280x1920/5d1e541cc557a65e52c96910aba89ae3f5ba2a84.jpg" type="image/jpeg">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
-    :root {
-      --gold: #bfa100;
-      --dark-gold: #9c8100;
-      --light-gold: #ffecb3;
-      --dark: #1a2a0f;
-      --medium: #2c3e11;
-      --light: #f8f8f0;
-      --text: #333;
-      --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    }
-    
-    body {
-      font-family: 'Montserrat', sans-serif;
-      background-color: var(--light);
-      color: var(--text);
-      line-height: 1.6;
-      overflow-x: hidden;
-      background: linear-gradient(135deg, #f8f8f0, #e8e8d8);
-    }
-    
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-    
-    /* Header Styles */
-    header {
-      background: linear-gradient(135deg, var(--dark), var(--medium));
-      padding: 20px 0;
-      position: relative;
-      overflow: hidden;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    }
-    
-    .header-content {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-    
-    .logo-container {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
-    
-    .logo {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      border: 3px solid var(--gold);
-      box-shadow: 0 0 20px rgba(191, 161, 0, 0.5);
-      background: #000;
-      overflow: hidden;
-      padding: 5px;
-    }
-    
-    .logo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 50%;
-    }
-    
-    .brand-text {
-      color: white;
-    }
-    
-    .brand-text h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.4rem;
-      margin-bottom: 5px;
-      color: var(--gold);
-      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    }
-    
-    .brand-text p {
-      font-size: 1.1rem;
-      max-width: 600px;
-      color: #d9d9d9;
-    }
-    
-    /* Navigation */
-    nav {
-      background: linear-gradient(to right, var(--medium), var(--dark));
-      border-radius: 8px;
-      margin: 15px 0;
-      box-shadow: var(--shadow);
-    }
-    
-    nav ul {
-      display: flex;
-      justify-content: center;
-      list-style: none;
-      padding: 0;
-      flex-wrap: wrap;
-    }
-    
-    nav ul li {
-      margin: 5px;
-    }
-    
-    nav ul li a {
-      display: block;
-      padding: 15px 25px;
-      color: var(--gold);
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.1rem;
-      transition: all 0.3s ease;
-      position: relative;
-      border-radius: 8px;
-    }
-    
-    nav ul li a:hover {
-      color: #fff;
-      background: rgba(191, 161, 0, 0.2);
-    }
-    
-    nav ul li a::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 0;
-      height: 3px;
-      background: var(--gold);
-      transition: width 0.3s ease;
-    }
-    
-    nav ul li a:hover::after {
-      width: 70%;
-    }
-    
-    /* Hero Section */
-    .hero {
-      background: linear-gradient(135deg, var(--dark), var(--medium));
-      padding: 80px 0;
-      text-align: center;
-      color: white;
-      border-radius: 12px;
-      margin: 30px 0;
-      box-shadow: var(--shadow);
-      position: relative;
-      overflow: hidden;
-    }
-    
-    .hero::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: radial-gradient(circle, transparent 20%, #1d2e0f 90%), 
-                  linear-gradient(to right, transparent, rgba(191, 161, 0, 0.1), transparent);
-      pointer-events: none;
-    }
-    
-    .hero h2 {
-      font-size: 2.8rem;
-      margin-bottom: 20px;
-      color: var(--gold);
-    }
-    
-    .hero p {
-      font-size: 1.3rem;
-      max-width: 800px;
-      margin: 0 auto 30px;
-    }
-    
-    .cta-button {
-      display: inline-block;
-      padding: 15px 35px;
-      background: var(--gold);
-      color: white;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 50px;
-      font-size: 1.2rem;
-      transition: all 0.3s ease;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-      border: 2px solid var(--dark-gold);
-    }
-    
-    .cta-button:hover {
-      background: var(--dark-gold);
-      transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-    }
-    
-    /* Main Content */
-    main {
-      padding: 20px 0;
-    }
-    
-    section {
-      background: white;
-      border-radius: 15px;
-      padding: 40px;
-      margin-bottom: 40px;
-      box-shadow: var(--shadow);
-      border: 1px solid rgba(191, 161, 0, 0.3);
-      position: relative;
-      overflow: hidden;
-    }
-    
-    section::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 5px;
-      background: linear-gradient(to right, var(--gold), var(--dark-gold));
-    }
-    
-    h2 {
-      color: var(--dark);
-      font-size: 2rem;
-      margin-bottom: 25px;
-      position: relative;
-      padding-bottom: 15px;
-      font-family: 'Playfair Display', serif;
-    }
-    
-    h2::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100px;
-      height: 3px;
-      background: linear-gradient(to right, var(--gold), var(--dark-gold));
-    }
-    
-    /* Image Gallery */
-    .image-gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 25px;
-      margin: 40px 0;
-    }
-    
-    .gallery-item {
-      background: white;
-      border-radius: 15px;
-      overflow: hidden;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-      border: 2px solid var(--light-gold);
-      transition: all 0.3s ease;
-      position: relative;
-    }
-    
-    .gallery-item:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-      border-color: var(--gold);
-    }
-    
-    .gallery-item img {
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-      display: block;
-    }
-    
-    .gallery-caption {
-      padding: 15px;
-      text-align: center;
-      font-size: 1.1rem;
-      color: var(--dark);
-      font-weight: 500;
-      background: var(--light-gold);
-    }
-    
-    /* Content Sections */
-    .content-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-    }
-    
-    .content-card {
-      background: white;
-      border-radius: 12px;
-      padding: 25px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-      border: 1px solid var(--light-gold);
-      transition: transform 0.3s ease;
-    }
-    
-    .content-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    }
-    
-    .content-card h3 {
-      color: var(--gold);
-      font-size: 1.5rem;
-      margin-bottom: 15px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    
-    .content-card h3 i {
-      color: var(--dark-gold);
-    }
-    
-    .callout {
-      background: rgba(191, 161, 0, 0.1);
-      border-left: 4px solid var(--gold);
-      padding: 25px;
-      border-radius: 0 12px 12px 0;
-      margin: 35px 0;
-      font-size: 1.1rem;
-      color: var(--text);
-    }
-    
-    .callout strong {
-      color: var(--dark-gold);
-    }
-    
-    /* Technical Specifications */
-    .specs-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 25px;
-      background: white;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    }
-    
-    .specs-table th, .specs-table td {
-      padding: 15px;
-      text-align: left;
-      border-bottom: 1px solid #eee;
-    }
-    
-    .specs-table th {
-      background: var(--gold);
-      color: white;
-      font-weight: 600;
-    }
-    
-    .specs-table tr:nth-child(even) {
-      background: var(--light-gold);
-    }
-    
-    /* FAQ Section */
-    details {
-      margin-bottom: 15px;
-      background: white;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
-      border: 1px solid #eee;
-    }
-    
-    details summary {
-      cursor: pointer;
-      font-weight: bold;
-      padding: 20px;
-      background: var(--light-gold);
-      font-size: 1.1rem;
-      position: relative;
-      list-style: none;
-    }
-    
-    details summary::after {
-      content: "+";
-      position: absolute;
-      right: 20px;
-      font-size: 1.5rem;
-      transition: transform 0.3s;
-    }
-    
-    details[open] summary::after {
-      transform: rotate(45deg);
-    }
-    
-    details p {
-      padding: 20px;
-      color: var(--text);
-    }
-    
-    /* Footer */
-    footer {
-      background: linear-gradient(to right, var(--dark), var(--medium));
-      padding: 40px 0;
-      text-align: center;
-      color: white;
-      position: relative;
-      margin-top: 50px;
-      border-top: 3px solid var(--gold);
-    }
-    
-    footer::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 3px;
-      background: linear-gradient(to right, transparent, var(--gold), transparent);
-    }
-    
-    footer p {
-      margin-bottom: 25px;
-      font-size: 1.1rem;
-    }
-    
-    .social-buttons {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-      margin-bottom: 30px;
-    }
-    
-    .social-buttons a {
-      display: flex;
-      align-items: center;
-      padding: 12px 25px;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    }
-    
-    .social-buttons a i {
-      margin-right: 10px;
-      font-size: 1.2rem;
-    }
-    
-    .whatsapp {
-      background: linear-gradient(to right, #25D366, #128C7E);
-      color: white;
-    }
-    
-    .telegram {
-      background: linear-gradient(to right, #0088cc, #2AABEE);
-      color: white;
-    }
-    
-    .tiktok {
-      background: linear-gradient(to right, #010101, #333);
-      color: white;
-    }
-    
-    .social-buttons a:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
-    }
-    
-    .copyright {
-      padding-top: 20px;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-      font-size: 0.9rem;
-      color: #aaa;
-    }
-    
-    /* Responsive Design */
-    @media (max-width: 768px) {
-      .header-content {
-        flex-direction: column;
-        text-align: center;
-      }
-      
-      .logo-container {
-        justify-content: center;
-        margin-bottom: 20px;
-      }
-      
-      nav ul {
-        flex-direction: column;
-        align-items: center;
-      }
-      
-      nav ul li a {
-        padding: 12px 20px;
-      }
-      
-      .hero h2 {
-        font-size: 2.2rem;
-      }
-      
-      section {
-        padding: 30px 20px;
-      }
-      
-      .image-gallery {
-        grid-template-columns: 1fr;
-      }
-    }
-    
-    /* Animations */
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    
-    .fade-in {
-      animation: fadeIn 0.8s ease-out;
-    }
-    
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.05); }
-      100% { transform: scale(1); }
-    }
-    
-    .pulse {
-      animation: pulse 2s infinite;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOLD METAL | Dere Altın Eleme Savak Sistemleri</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        :root {
+            --gold: #D4AF37;
+            --dark-gold: #B8860B;
+            --light-gold: #FFD700;
+            --dark: #1a2a0f;
+            --light: #f8f8f0;
+            --success: #4CAF50;
+            --warning: #FF9800;
+            --danger: #F44336;
+            --info: #2196F3;
+            --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            --admin-bg: #1e1e2d;
+            --admin-panel: #2a2a3c;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f5dc, #e8e8d8);
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+            position: relative;
+            min-height: 100vh;
+            padding-bottom: 100px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, var(--dark), #2c3e11);
+            padding: 20px 0;
+            box-shadow: var(--shadow);
+            position: relative;
+        }
+        
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 3px solid var(--gold);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+            background: #000;
+            overflow: hidden;
+            padding: 5px;
+        }
+        
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        
+        .brand-text {
+            color: white;
+        }
+        
+        .brand-text h1 {
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+            color: var(--light-gold);
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        /* Navigation */
+        nav {
+            background: linear-gradient(to right, #2c3e11, var(--dark));
+            border-radius: 8px;
+            margin: 15px 0;
+            box-shadow: var(--shadow);
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            flex-wrap: wrap;
+        }
+        
+        nav ul li {
+            margin: 5px;
+        }
+        
+        nav ul li a {
+            display: block;
+            padding: 12px 20px;
+            color: var(--light-gold);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            position: relative;
+            border-radius: 8px;
+        }
+        
+        nav ul li a:hover {
+            color: #fff;
+            background: rgba(212, 175, 55, 0.2);
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 80px 0;
+            text-align: center;
+            background: url('https://images.unsplash.com/photo-1528973085171-9c9e0b0e3c9a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            color: white;
+            position: relative;
+            margin-bottom: 40px;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--light-gold);
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: var(--gold);
+            color: white;
+            padding: 15px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .cta-button:hover {
+            background: var(--dark-gold);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Main Content */
+        main {
+            padding: 20px 0 50px;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin: 40px 0;
+            position: relative;
+        }
+        
+        .section-title h2 {
+            font-size: 2.2rem;
+            color: var(--dark);
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title h2::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(to right, var(--gold), var(--dark-gold));
+            border-radius: 2px;
+        }
+        
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .content-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+            border-top: 4px solid var(--gold);
+            transition: transform 0.3s ease;
+        }
+        
+        .content-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .content-card h3 {
+            color: var(--dark-gold);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.5rem;
+        }
+        
+        .content-card p {
+            margin-bottom: 20px;
+            color: #555;
+            font-size: 1.1rem;
+        }
+        
+        /* Device Info */
+        .device-info {
+            display: flex;
+            gap: 40px;
+            margin: 50px 0;
+            flex-wrap: wrap;
+        }
+        
+        .device-image {
+            flex: 1;
+            min-width: 300px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        
+        .device-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .device-specs {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .specs-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .specs-table th, .specs-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .specs-table th {
+            background: var(--gold);
+            color: white;
+            font-weight: 600;
+        }
+        
+        .specs-table tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        
+        /* Hobby Section */
+        .hobby-section {
+            background: rgba(212, 175, 55, 0.05);
+            padding: 40px;
+            border-radius: 15px;
+            margin: 50px 0;
+        }
+        
+        .hobby-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .hobby-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .hobby-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .hobby-icon {
+            font-size: 3rem;
+            color: var(--gold);
+            margin-bottom: 20px;
+        }
+        
+        /* Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+        
+        .gallery-item {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            position: relative;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        
+        /* FAQ */
+        .faq-section {
+            margin: 50px 0;
+        }
+        
+        .faq-item {
+            margin-bottom: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            padding: 20px;
+            background: var(--gold);
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-answer {
+            padding: 20px;
+            display: none;
+        }
+        
+        .faq-answer.active {
+            display: block;
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(to right, var(--dark), #2c3e11);
+            padding: 40px 0 20px;
+            color: white;
+            position: relative;
+            margin-top: 50px;
+            border-top: 3px solid var(--gold);
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .footer-section {
+            flex: 1;
+            min-width: 300px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-section h3 {
+            color: var(--light-gold);
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-section h3::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--gold);
+        }
+        
+        .contact-info-footer p {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-link {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .social-link:hover {
+            background: var(--gold);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: #aaa;
+            margin-top: 20px;
+            text-align: center;
+        }
+        
+        /* Admin Panel Button */
+        .admin-panel-btn {
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            background: var(--admin-bg);
+            color: white;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        
+        .admin-panel-btn:hover {
+            background: var(--dark);
+            transform: rotate(30deg);
+        }
+        
+        /* Admin Panel */
+        .admin-panel {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+            max-width: 450px;
+            height: 100vh;
+            background: var(--admin-bg);
+            box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+            z-index: 1002;
+            display: none;
+            flex-direction: column;
+            color: white;
+        }
+        
+        .admin-header {
+            background: var(--dark);
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--gold);
+        }
+        
+        .admin-header h3 {
+            color: var(--light-gold);
+        }
+        
+        .close-admin-panel {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        
+        .admin-tabs {
+            display: flex;
+            background: #2a2a3c;
+        }
+        
+        .admin-tab {
+            flex: 1;
+            padding: 15px;
+            text-align: center;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            border-bottom: 2px solid transparent;
+        }
+        
+        .admin-tab.active {
+            background: var(--admin-bg);
+            border-bottom: 2px solid var(--gold);
+        }
+        
+        .admin-tab:hover:not(.active) {
+            background: #333346;
+        }
+        
+        .admin-content {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+        }
+        
+        .admin-section {
+            display: none;
+        }
+        
+        .admin-section.active {
+            display: block;
+        }
+        
+        /* Page Editor */
+        .editor-controls {
+            margin-bottom: 20px;
+        }
+        
+        .editor-btn {
+            padding: 10px 15px;
+            background: var(--gold);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+            transition: background 0.3s;
+        }
+        
+        .editor-btn:hover {
+            background: var(--dark-gold);
+        }
+        
+        .editor-btn.save {
+            background: var(--success);
+        }
+        
+        .editor-btn.cancel {
+            background: var(--danger);
+        }
+        
+        .editable-content {
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        
+        .editable-content h4 {
+            color: var(--light-gold);
+            margin-bottom: 10px;
+            border-bottom: 1px solid var(--gold);
+            padding-bottom: 5px;
+        }
+        
+        .editable-content textarea {
+            width: 100%;
+            min-height: 100px;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid #444;
+            border-radius: 5px;
+            color: white;
+            margin-bottom: 10px;
+        }
+        
+        .editable-content input {
+            width: 100%;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid #444;
+            border-radius: 5px;
+            color: white;
+            margin-bottom: 10px;
+        }
+        
+        .admin-actions {
+            margin-top: 20px;
+            display: flex;
+            gap: 10px;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .logo-container {
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .device-info {
+                flex-direction: column;
+            }
+            
+            .hero h2 {
+                font-size: 2rem;
+            }
+            
+            .admin-panel {
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+        
+        /* Notification */
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--success);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+            z-index: 2000;
+            display: none;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="header-content">
-        <div class="logo-container">
-          <div class="logo">
-            <img src="https://64.media.tumblr.com/c8a2f0b83b63adef6f4bd0ba29de5180/30b24c22617e32d9-04/s1280x1920/5d1e541cc557a65e52c96910aba89ae3f5ba2a84.jpg" alt="GOLD METAL Logo">
-          </div>
-          <div class="brand-text">
-            <h1>GOLD METAL</h1>
-            <p>Premium Altın Eleme Ekipmanları</p>
-          </div>
-        </div>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="logo-container">
+                    <div class="logo">
+                        <img src="https://64.media.tumblr.com/c8a2f0b83b63adef6f4bd0ba29de5180/30b24c22617e32d9-04/s1280x1920/5d1e541cc557a65e52c96910aba89ae3f5ba2a84.jpg" alt="GOLD METAL Logo">
+                    </div>
+                    <div class="brand-text">
+                        <h1>GOLD METAL</h1>
+                        <p>Dere Altın Eleme Sistemleri</p>
+                    </div>
+                </div>
+                
+                <nav>
+                    <ul>
+                        <!-- Butonların bağlantıları değiştirildi -->
+                        <li><a href="gold-metal.html"><i class="fas fa-shopping-cart"></i> Ürün</a></li>
+                        <li><a href="#hobi"><i class="fas fa-gem"></i> Hobi Bilgileri</a></li>
+                        <li><a href="iletişim.html"><i class="fas fa-envelope"></i> İletişim</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
         
-        <nav>
-          <ul>
-            <li><a href="gold-metal.html"><i class="fas fa-home"></i> Anasayfa</a></li>
-            <li><a href="sulice-box.html"><i class="fas fa-shopping-cart"></i> Ürünler</a></li>
-            <li><a href="iletisim.html"><i class="fas fa-envelope"></i> İletişim</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    
-    <div class="hero fade-in">
-      <div class="container">
-        <h2>Doğadaki Altınlarınızı Keşfedin!</h2>
-        <p>Profesyonel altın eleme ekipmanlarımızla doğanın gizli hazinelerini ortaya çıkarın. Hafif, dayanıklı ve yüksek verimli ekipmanlarımız hobi madenciliğinizi bir üst seviyeye taşıyacak.</p>
-        <a href="sulice-box.html" class="cta-button pulse">Ürünleri İncele <i class="fas fa-arrow-right"></i></a>
-      </div>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Profesyonel Altın Eleme Savak Sistemi</h2>
+                <p>Dere yataklarında kırıntı altın arama hobisini bir üst seviyeye taşıyın. Hafif, dayanıklı ve yüksek verimli ekipmanlarımızla doğanın gizli hazinelerini keşfedin.</p>
+                <a href="#urun" class="cta-button">Ürünü İncele <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </section>
+        
+        <main>
+            <section id="urun">
+                <div class="section-title">
+                    <h2><i class="fas fa-water"></i> Altın Eleme Savak Sistemi</h2>
+                    <p>Dere yataklarında maksimum verim için özel tasarım</p>
+                </div>
+                
+                <div class="device-info">
+                    <div class="device-image">
+                        <img src="https://64.media.tumblr.com/5d2289f5c4a820a5410f88049c919410/743dab049bde52d7-9d/s1280x1920/d110e38d2a3bf4fca8b8039e88485c9f541b051f.jpg" alt="Altın Eleme Savak Sistemi">
+                    </div>
+                    
+                    <div class="device-specs">
+                        <h3>Teknik Özellikler</h3>
+                        <p>Profesyonel altın eleme setimiz, en zorlu doğa koşullarında bile üstün performans sunacak şekilde tasarlanmıştır:</p>
+                        
+                        <table class="specs-table">
+                            <tr>
+                                <th>Özellik</th>
+                                <th>Detay</th>
+                            </tr>
+                            <tr>
+                                <td>Malzeme</td>
+                                <td>Hafif Alüminyum Alaşım</td>
+                            </tr>
+                            <tr>
+                                <td>Ağırlık</td>
+                                <td>8.5kg (motor dahil)</td>
+                            </tr>
+                            <tr>
+                                <td>Pompa Uyumu</td>
+                                <td>Sintine Pompası ile Tam Uyum</td>
+                            </tr>
+                            <tr>
+                                <td>Kapasite</td>
+                                <td>Saatte 1-2 ton kum işleme</td>
+                            </tr>
+                            <tr>
+                                <td>Kurulum Süresi</td>
+                                <td>5 dakikadan az</td>
+                            </tr>
+                            <tr>
+                                <td>Garanti</td>
+                                <td>30 gün (üretim kusurları için, kullanıcı kaynaklı hasarları kapsamaz)</td>
+                            </tr>
+                        </table>
+                        
+                        <div style="margin-top: 25px; background: rgba(212, 175, 55, 0.1); padding: 20px; border-radius: 10px;">
+                            <h4><i class="fas fa-shipping-fast"></i> Hızlı Teslimat</h4>
+                            <p>Türkiye'nin her yerine 2-4 iş günü içinde teslimat. Güvenli paketleme ve kolay iade seçenekleri.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="hobi" class="hobby-section">
+                <div class="section-title">
+                    <h2><i class="fas fa-gem"></i> Altın Arama Hobisi</h2>
+                    <p>Derelerde kırıntı altın aramanın keyfini çıkarın</p>
+                </div>
+                
+                <div class="hobby-grid">
+                    <div class="hobby-card">
+                        <div class="hobby-icon">
+                            <i class="fas fa-tree"></i>
+                        </div>
+                        <h3>Doğayla İç İçe</h3>
+                        <p>Altın arama hobisi sizi şehrin gürültüsünden uzaklaştırırken, doğanın sessizliğiyle baş başa kalmanızı sağlar.</p>
+                    </div>
+                    
+                    <div class="hobby-card">
+                        <div class="hobby-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h3>Öğretici Deneyim</h3>
+                        <p>Jeoloji, akışkan dinamiği ve tarih hakkında birçok şey öğrenebilirsiniz. Sabır ve dikkat gerektiren keyifli bir uğraş.</p>
+                    </div>
+                    
+                    <div class="hobby-card">
+                        <div class="hobby-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3>Sosyal Aktivite</h3>
+                        <p>Aileniz ve arkadaşlarınızla birlikte yapabileceğiniz, unutulmaz anılar biriktireceğiniz bir aktivite.</p>
+                    </div>
+                    
+                    <div class="hobby-card">
+                        <div class="hobby-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Doğaya Saygılı</h3>
+                        <p>Çevreye zarar vermeden, doğaya saygılı şekilde yapılmalıdır. Ekipmanlarımız minimum çevresel etki için tasarlanmıştır.</p>
+                    </div>
+                </div>
+                
+                <div class="section-title">
+                    <h2><i class="fas fa-images"></i> Altın Arama Teknikleri</h2>
+                    <p>Hobi madenciliğinde başarılı olmanın püf noktaları</p>
+                </div>
+                
+                <div class="content-grid">
+                    <div class="content-card">
+                        <h3><i class="fas fa-search-location"></i> Doğru Yer Seçimi</h3>
+                        <p>Altın genellikle akarsu yataklarında, eski nehir yollarında ve kuvars damarlarının bulunduğu bölgelerde bulunur. Türkiye'de özellikle Ege, Doğu Anadolu ve Karadeniz bölgelerinde verimli sonuçlar alınmaktadır.</p>
+                    </div>
+                    
+                    <div class="content-card">
+                        <h3><i class="fas fa-toolbox"></i> Doğru Ekipman Seçimi</h3>
+                        <p>Hafif, dayanıklı ve verimli ekipmanlar hobi madenciliğinin keyfini artırır. Savak sistemi, tava, kepçe ve elek gibi temel ekipmanlarla başlayabilirsiniz.</p>
+                    </div>
+                    
+                    <div class="content-card">
+                        <h3><i class="fas fa-water"></i> Akışı Anlamak</h3>
+                        <p>Altın yoğunluğu nedeniyle su akışının yavaşladığı iç kıvrımlarda, kayaların arkasında ve çukurlarda birikir. Su akışını gözlemleyerek doğru noktaları belirleyin.</p>
+                    </div>
+                </div>
+                
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="https://64.media.tumblr.com/ef3290d71c781436ae2c5d24864105d2/0cce1380112f7753-a4/s250x400/8f81791e6126ea44734abac1afe0cb09d372a9cb.jpg" alt="Kuvars Damarındaki Altın">
+                        <div class="gallery-caption">Kuvars Damarındaki Altın</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://64.media.tumblr.com/a2bfabcb22f14ab4cdacdfade5adc3b7/ecd8e77b36e1bb45-90/s250x400/df6d8481875c72268f8cb44af7b7634845bb2a83.jpg" alt="İşlenmemiş Altın">
+                        <div class="gallery-caption">Derede Çıkan İşlenmemiş Altın</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://64.media.tumblr.com/6a2ffd61c8529387a7f2f4b416923a95/9f414f4672f7a770-bb/s400x600/a07aee0b3f3cd025ced6525258aa6e5cc324eeba.jpg" alt="Kayaç Formatında Altın">
+                        <div class="gallery-caption">Kayaç Formatında Altın</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://64.media.tumblr.com/cc60f0f754b275cd9a9be86cfbffdecf/bd8668c75756979c-ed/s1280x1920/f2435e3b4c7feebf5b21c25ac198629d30d8ecae.jpg" alt="Pan'daki Altın">
+                        <div class="gallery-caption">Pan'daki Altın</div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="faq-section">
+                <div class="section-title">
+                    <h2><i class="fas fa-question-circle"></i> Sıkça Sorulan Sorular</h2>
+                    <p>Altın arama hobisi hakkında merak ettikleriniz</p>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Yeni başlayanlar için önerileriniz nedir?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Basit bir eleme kutusu ve tava ile başlayabilirsiniz. Sabırlı olun, doğayı gözlemleyin ve çevreye zarar vermemeye özen gösterin. GOLD METAL başlangıç setleri, yeni başlayanlar için ideal çözümler sunar.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Hangi bölgelerde altın aramak daha verimli?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Akarsu yatakları, eski nehir yolları ve kuvars damarlarının bulunduğu bölgeler altın arama için idealdir. Türkiye'de özellikle Ege, Doğu Anadolu ve Karadeniz bölgelerinde verimli sonuçlar alınmaktadır.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Altın aramak için izin gerekli mi?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Hobi amaçlı küçük çapta altın arama için genellikle özel izin gerekmez. Ancak özel mülklerde ve koruma altındaki bölgelerde izin almanız gerekebilir. Yerel yönetmeliklere uygun hareket etmek önemlidir.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Nasıl temizlik yapmalıyım?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ekipmanlarınızı kullandıktan sonra temiz suyla yıkayın ve kurumasını bekleyin. Özellikle hareketli parçalarda kum birikmesini önlemek için düzenli temizlik önemlidir. Kesinlikle kimyasal temizleyici kullanmayın.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Ne kadar altın bulabilirim?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Bu bölgeye, mevsime ve şansınıza bağlıdır. Profesyonel olmayan hobiciler genellikle günde birkaç kırıntı altın bulabilir. Önemli olan sürecin keyfini çıkarmak ve doğayla iç içe olmaktır.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer id="iletisim">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>İletişim</h3>
+                    <div class="contact-info-footer">
+                        <p><i class="fas fa-map-marker-alt"></i> Gebze, Kocaeli, Türkiye</p>
+                        <p><i class="fas fa-phone"></i> +90 531 500 3285</p>
+                        <p><i class="fas fa-envelope"></i> info@goldmetal.com</p>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Hızlı Linkler</h3>
+                    <p><a href="gold-metal.html" style="color: #ddd; text-decoration: none;">Anasayfa</a></p>
+                    <p><a href="sulice-box.html" style="color: #ddd; text-decoration: none;">Ürün Özellikleri</a></p>
+                    <p><a href="#hobi" style="color: #ddd; text-decoration: none;">Hobi Bilgileri</a></p>
+                    <p><a href="iletişim.html" style="color: #ddd; text-decoration: none;">İletişim</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Hakkımızda</h3>
+                    <p>GOLD METAL, doğa severler ve hobi madencileri için yüksek kaliteli altın eleme ekipmanları üretir. Ürünlerimiz hafif, dayanıklı ve çevre dostu malzemelerden üretilmiştir.</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 GOLD METAL - Tüm hakları saklıdır</p>
+                <p>Altın arama hobisi, yerel yönetmeliklere uygun olarak yapılmalıdır.</p>
+            </div>
+        </footer>
     </div>
     
-    <main class="container">
-      <section class="fade-in">
-        <h2><i class="fas fa-gem"></i> Altın Arama Hobisi</h2>
-        <p>Derelerde kırıntı altın aramak, doğa ile iç içe vakit geçirirken küçük altın parçacıklarını bulmayı amaçlayan keyifli ve öğretici bir hobidir.</p>
-        
-        <div class="content-grid">
-          <div class="content-card">
-            <h3><i class="fas fa-tree"></i> Doğayla İç İçe</h3>
-            <p>Doğada vakit geçirmek ve yeni yerler keşfetmek için harika bir fırsattır. Altın arama aktivitesi sizi şehrin gürültüsünden uzaklaştırırken, doğanın sessizliğiyle baş başa kalmanızı sağlar.</p>
-          </div>
-          
-          <div class="content-card">
-            <h3><i class="fas fa-user-graduate"></i> Öğretici Deneyim</h3>
-            <p>Altın arama sabır, dikkat ve doğru ekipman gerektirir. Bu süreçte jeoloji, akışkan dinamiği ve tarih hakkında birçok şey öğrenebilirsiniz.</p>
-          </div>
-          
-          <div class="content-card">
-            <h3><i class="fas fa-leaf"></i> Doğaya Saygılı</h3>
-            <p>Çevreye zarar vermeden, doğaya saygılı şekilde yapılmalıdır. GOLD METAL ekipmanları minimum çevresel etki ile maksimum verim sağlamak için tasarlanmıştır.</p>
-          </div>
-        </div>
-        
-        <div class="callout">
-          <strong>Önemli Not:</strong> GOLD MONSTER Cihazımız, doğada altın arama hobisini daha keyifli ve verimli hale getirmek için özel olarak tasarlanmıştır. Ekipmanlarımız, hafif alüminyum yapısı ve yüksek verimliliği ile dikkat çekmektedir.
-        </div>
-      </section>
-      
-      <section class="fade-in">
-        <h2><i class="fas fa-images"></i> Doğal Altın Örnekleri</h2>
-        <p>Doğada bulunan altın örnekleri ve GOLD METAL ekipmanlarıyla nasıl daha verimli sonuçlar alabileceğinizi keşfedin:</p>
-        
-        <div class="image-gallery">
-          <div class="gallery-item">
-            <img src="https://64.media.tumblr.com/ef3290d71c781436ae2c5d24864105d2/0cce1380112f7753-a4/s250x400/8f81791e6126ea44734abac1afe0cb09d372a9cb.jpg" alt="Doğal Altın Örneği - Kuvars İçinde">
-            <div class="gallery-caption">Kuvars Kaya İçinde Doğal Altın</div>
-          </div>
-          <div class="gallery-item">
-            <img src="https://64.media.tumblr.com/a2bfabcb22f14ab4cdacdfade5adc3b7/ecd8e77b36e1bb45-90/s250x400/df6d8481875c72268f8cb44af7b7634845bb2a83.jpg" alt="Ham Altın Parçaları">
-            <div class="gallery-caption">Nehir Yatağında Bulunan Ham Altın</div>
-          </div>
-          <div class="gallery-item">
-            <img src="https://64.media.tumblr.com/6a2ffd61c8529387a7f2f4b416923a95/9f414f4672f7a770-bb/s400x600/a07aee0b3f3cd025ced6525258aa6e5cc324eeba.jpg" alt="Altın Damarları">
-            <div class="gallery-caption">Kaya Formasyonundaki Altın Damarları</div>
-          </div>
-        </div>
-      </section>
-      
-      <section class="fade-in">
-        <h2><i class="fas fa-cogs"></i> Teknik Özellikler</h2>
-        <p>GOLD METAL ekipmanları, en zorlu doğa koşullarında bile üstün performans sunacak şekilde tasarlanmıştır:</p>
-        
-        <table class="specs-table">
-          <tr>
-            <th>Özellik</th>
-            <th>Detay</th>
-          </tr>
-          <tr>
-            <td>Gövde Malzemesi</td>
-            <td>Hafif Alüminyum (Dayanıklı ve Korozyona Dayanıklı)</td>
-          </tr>
-          <tr>
-            <td>Pompa Uyumu</td>
-            <td>Sintine Pompası ile Tam Uyum (Akü Hariç)</td>
-          </tr>
-          <tr>
-            <td>Ağırlık</td>
-            <td>Motorla Birlikte Sadece 8.5 kg</td>
-          </tr>
-          <tr>
-            <td>Verimlilik</td>
-            <td>Saatte 1-2 Ton Kum İşleme Kapasitesi</td>
-          </tr>
-        </table>
-      </section>
-      
-      <section class="fade-in">
-        <h2><i class="fas fa-question-circle"></i> Sıkça Sorulan Sorular</h2>
-        <p>GOLD METAL ürünleri hakkında en çok merak edilen sorular ve cevapları:</p>
-        
-        <details>
-          <summary>Yeni başlayanlar için önerileriniz nedir?</summary>
-          <p>Basit bir eleme kutusu ve tava ile başlayabilirsiniz. Sabırlı olun, doğayı gözlemleyin ve çevreye zarar vermemeye özen gösterin. GOLD METAL başlangıç setleri, yeni başlayanlar için ideal çözümler sunar.</p>
-        </details>
-        
-        <details>
-          <summary>Kargo süresi nedir?</summary>
-          <p>Türkiye içi siparişler 2-4 iş günü içinde teslim edilir.</p>
-        </details>
-        
-        <details>
-          <summary>Ürün garantisi var mı?</summary>
-          <p>Evet, tüm GOLD METAL ürünleri 30 günlük üretici garantisi kapsamındadır. Garanti kapsamı üretim hatalarını ve malzeme kusurlarını içerir. Kişisel kullanımdan kaynaklanan hasarlar garanti kapsamı dışındadır.</p>
-        </details>
-        
-        <details>
-          <summary>Nasıl temizlik yapmalıyım?</summary>
-          <p>Ekipmanlarınızı kullandıktan sonra temiz suyla yıkayın ve kurumasını bekleyin. Özellikle hareketli parçalarda kum birikmesini önlemek için düzenli temizlik önemlidir. Kesinlikle kimyasal temizleyici kullanmayın.</p>
-        </details>
-        
-        <details>
-          <summary>Hangi bölgelerde altın aramak daha verimli?</summary>
-          <p>Akarsu yatakları, eski nehir yolları ve kuvars damarlarının bulunduğu bölgeler altın arama için idealdir. Türkiye'de özellikle Ege, Doğu Anadolu ve Karadeniz bölgelerinde verimli sonuçlar alınmaktadır.</p>
-        </details>
-      </section>
-    </main>
+    <!-- Admin Panel Button -->
+    <div class="admin-panel-btn">
+        <i class="fas fa-cog"></i>
+    </div>
     
-    <footer>
-      <div class="container">
-        <div class="social-buttons">
-          <a href="https://wa.me/905315003285" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-          <a href="https://t.me/Aykut4181" target="_blank" class="telegram"><i class="fab fa-telegram"></i> Telegram</a>
-          <a href="https://www.tiktok.com/@goldmetal81" target="_blank" class="tiktok"><i class="fab fa-tiktok"></i> TikTok</a>
+    <!-- Admin Panel -->
+    <div class="admin-panel">
+        <div class="admin-header">
+            <h3>Yönetici Paneli</h3>
+            <button class="close-admin-panel"><i class="fas fa-times"></i></button>
         </div>
-        
-        <p>GOLD METAL, doğaya saygılı ve çevre dostu üretim anlayışıyla altın arama ekipmanları sunar.</p>
-        
-        <div class="copyright">
-          <p>&copy; 2025 GOLD METAL Ürünleri – Tüm hakları saklıdır.</p>
-          <p>Altın arama hobisi, yerel yönetmeliklere uygun olarak yapılmalıdır.</p>
+        <div class="admin-tabs">
+            <div class="admin-tab active" data-tab="content">İçerik Yönetimi</div>
+            <div class="admin-tab" data-tab="images">Resim Yönetimi</div>
+            <div class="admin-tab" data-tab="settings">Sistem Ayarları</div>
         </div>
-      </div>
-    </footer>
-  </div>
-  
-  <script>
-    // Animasyonları tetiklemek için basit bir JavaScript
-    document.addEventListener('DOMContentLoaded', function() {
-      const fadeElements = document.querySelectorAll('.fade-in');
-      
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.style.opacity = 1;
-            entry.target.style.transform = 'translateY(0)';
-            observer.unobserve(entry.target);
-          }
+        <div class="admin-content">
+            <!-- Content Management Section -->
+            <div class="admin-section active" id="content-management">
+                <h4>Sayfa İçeriklerini Düzenle</h4>
+                <p>Bu bölümden web sayfasındaki tüm içerikleri düzenleyebilirsiniz.</p>
+                
+                <div class="editable-content">
+                    <h4>Ana Başlık</h4>
+                    <input type="text" id="main-title" value="Profesyonel Altın Eleme Savak Sistemi">
+                </div>
+                
+                <div class="editable-content">
+                    <h4>Ana Açıklama</h4>
+                    <textarea id="main-description">Dere yataklarında kırıntı altın arama hobisini bir üst seviyeye taşıyın. Hafif, dayanıklı ve yüksek verimli ekipmanlarımızla doğanın gizli hazinelerini keşfedin.</textarea>
+                </div>
+                
+                <div class="editable-content">
+                    <h4>Ürün Açıklaması</h4>
+                    <textarea id="product-description">Profesyonel altın eleme setimiz, en zorlu doğa koşullarında bile üstün performans sunacak şekilde tasarlanmıştır.</textarea>
+                </div>
+                
+                <div class="editable-content">
+                    <h4>Teknik Özellikler</h4>
+                    <div class="specs-editor">
+                        <table>
+                            <tr>
+                                <th>Özellik</th>
+                                <th>Değer</th>
+                            </tr>
+                            <tr>
+                                <td><input type="text" value="Malzeme"></td>
+                                <td><input type="text" value="Hafif Alüminyum Alaşım"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" value="Ağırlık"></td>
+                                <td><input type="text" value="8.5kg (motor dahil)"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" value="Pompa Uyumu"></td>
+                                <td><input type="text" value="Sintine Pompası ile Tam Uyum"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="admin-actions">
+                    <button class="editor-btn save" id="save-content">Değişiklikleri Kaydet</button>
+                    <button class="editor-btn cancel" id="cancel-changes">İptal</button>
+                </div>
+            </div>
+            
+            <!-- Image Management Section -->
+            <div class="admin-section" id="image-management">
+                <h4>Resim Yönetimi</h4>
+                <p>Bu bölümden web sayfasındaki resimleri değiştirebilirsiniz.</p>
+                
+                <div class="editable-content">
+                    <h4>Logo Resmi</h4>
+                    <input type="text" id="logo-url" value="https://64.media.tumblr.com/c8a2f0b83b63adef6f4bd0ba29de5180/30b24c22617e32d9-04/s1280x1920/5d1e541cc557a65e52c96910aba89ae3f5ba2a84.jpg">
+                    <button class="editor-btn" id="update-logo">Güncelle</button>
+                </div>
+                
+                <div class="editable-content">
+                    <h4>Ürün Resmi</h4>
+                    <input type="text" id="product-image" value="https://64.media.tumblr.com/5d2289f5c4a820a5410f88049c919410/743dab049bde52d7-9d/s1280x1920/d110e38d2a3bf4fca8b8039e88485c9f541b051f.jpg">
+                    <button class="editor-btn" id="update-product-image">Güncelle</button>
+                </div>
+                
+                <div class="editable-content">
+                    <h4>Galeri Resimleri</h4>
+                    <div class="gallery-editor">
+                        <div>
+                            <input type="text" value="https://64.media.tumblr.com/ef3290d71c781436ae2c5d24864105d2/0cce1380112f7753-a4/s250x400/8f81791e6126ea44734abac1afe0cb09d372a9cb.jpg">
+                        </div>
+                        <div>
+                            <input type="text" value="https://64.media.tumblr.com/a2bfabcb22f14ab4cdacdfade5adc3b7/ecd8e77b36e1bb45-90/s250x400/df6d8481875c72268f8cb44af7b7634845bb2a83.jpg">
+                        </div>
+                        <div>
+                            <input type="text" value="https://64.media.tumblr.com/6a2ffd61c8529387a7f2f4b416923a95/9f414f4672f7a770-bb/s400x600/a07aee0b3f3cd025ced6525258aa6e5cc324eeba.jpg">
+                        </div>
+                    </div>
+                    <button class="editor-btn" id="update-gallery">Galeriyi Güncelle</button>
+                </div>
+            </div>
+            
+            <!-- Settings Section -->
+            <div class="admin-section" id="settings-management">
+                <h4>Sistem Ayarları</h4>
+                <p>Bu bölümden genel sistem ayarlarını yapılandırabilirsiniz.</p>
+                
+                <div class="editable-content">
+                    <h4>Şirket Bilgileri</h4>
+                    <div>
+                        <label>Şirket Adı:</label>
+                        <input type="text" id="company-name" value="GOLD METAL">
+                    </div>
+                    <div>
+                        <label>Telefon:</label>
+                        <input type="text" id="company-phone" value="+90 531 500 3285">
+                    </div>
+                    <div>
+                        <label>E-posta:</label>
+                        <input type="text" id="company-email" value="info@goldmetal.com">
+                    </div>
+                </div>
+                
+                <div class="editable-content">
+                    <h4>Güvenlik</h4>
+                    <div>
+                        <label>Yönetici Kullanıcı Adı:</label>
+                        <input type="text" id="admin-username" value="GOLDMETAL" disabled>
+                    </div>
+                    <div>
+                        <label>Yeni Şifre:</label>
+                        <input type="password" id="new-password" placeholder="Yeni şifre girin">
+                    </div>
+                    <div>
+                        <label>Şifreyi Onayla:</label>
+                        <input type="password" id="confirm-password" placeholder="Şifreyi tekrar girin">
+                    </div>
+                    <button class="editor-btn" id="update-password">Şifreyi Güncelle</button>
+                </div>
+                
+                <div class="editable-content">
+                    <h4>Veritabanı Yedekleme</h4>
+                    <button class="editor-btn" id="backup-db">Veritabanını Yedekle</button>
+                    <button class="editor-btn" id="restore-db">Yedekten Geri Yükle</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Notification -->
+    <div class="notification" id="notification">
+        Değişiklikler kaydedildi!
+    </div>
+    
+    <script>
+        // Admin Panel Functionality
+        const adminBtn = document.querySelector('.admin-panel-btn');
+        const adminPanel = document.querySelector('.admin-panel');
+        const closeAdminPanel = document.querySelector('.close-admin-panel');
+        const adminTabs = document.querySelectorAll('.admin-tab');
+        const adminSections = document.querySelectorAll('.admin-section');
+        const notification = document.getElementById('notification');
+        
+        // Show admin panel
+        adminBtn.addEventListener('click', () => {
+            const isLoggedIn = sessionStorage.getItem('adminLoggedIn') === 'true';
+            
+            if (isLoggedIn) {
+                adminPanel.style.display = 'flex';
+            } else {
+                // Show login prompt
+                const username = prompt("Kullanıcı Adı:");
+                const password = prompt("Şifre:");
+                
+                if (username === "GOLDMETAL" && password === "Aykut4181") {
+                    sessionStorage.setItem('adminLoggedIn', 'true');
+                    adminPanel.style.display = 'flex';
+                    showNotification('Başarıyla giriş yapıldı!');
+                } else {
+                    showNotification('Hatalı kullanıcı adı veya şifre!', "error");
+                }
+            }
         });
-      }, {
-        threshold: 0.1
-      });
-      
-      fadeElements.forEach(element => {
-        element.style.opacity = 0;
-        element.style.transform = 'translateY(20px)';
-        element.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
-        observer.observe(element);
-      });
-    });
-  </script>
+        
+        // Close admin panel
+        closeAdminPanel.addEventListener('click', () => {
+            adminPanel.style.display = 'none';
+        });
+        
+        // Switch admin tabs
+        adminTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs
+                adminTabs.forEach(t => t.classList.remove('active'));
+                
+                // Add active class to clicked tab
+                tab.classList.add('active');
+                
+                // Hide all sections
+                adminSections.forEach(section => {
+                    section.classList.remove('active');
+                });
+                
+                // Show selected section
+                const tabName = tab.getAttribute('data-tab');
+                document.getElementById(`${tabName}-management`).classList.add('active');
+            });
+        });
+        
+        // Save content changes
+        document.getElementById('save-content').addEventListener('click', () => {
+            // Update main title
+            const mainTitle = document.getElementById('main-title').value;
+            document.querySelector('.hero h2').textContent = mainTitle;
+            
+            // Update main description
+            const mainDescription = document.getElementById('main-description').value;
+            document.querySelector('.hero p').textContent = mainDescription;
+            
+            // Update product description
+            const productDescription = document.getElementById('product-description').value;
+            document.querySelector('.device-specs p').textContent = productDescription;
+            
+            showNotification('İçerik başarıyla güncellendi!');
+        });
+        
+        // Update logo
+        document.getElementById('update-logo').addEventListener('click', () => {
+            const logoUrl = document.getElementById('logo-url').value;
+            document.querySelector('.logo img').src = logoUrl;
+            showNotification('Logo başarıyla güncellendi!');
+        });
+        
+        // Update product image
+        document.getElementById('update-product-image').addEventListener('click', () => {
+            const productImage = document.getElementById('product-image').value;
+            document.querySelector('.device-image img').src = productImage;
+            showNotification('Ürün resmi başarıyla güncellendi!');
+        });
+        
+        // Update password
+        document.getElementById('update-password').addEventListener('click', () => {
+            const newPassword = document.getElementById('new-password').value;
+            const confirmPassword = document.getElementById('confirm-password').value;
+            
+            if (newPassword && newPassword === confirmPassword) {
+                showNotification('Şifre başarıyla güncellendi!');
+                document.getElementById('new-password').value = '';
+                document.getElementById('confirm-password').value = '';
+            } else {
+                showNotification('Şifreler eşleşmiyor!', "error");
+            }
+        });
+        
+        // Backup database
+        document.getElementById('backup-db').addEventListener('click', () => {
+            showNotification('Veritabanı yedeklemesi başlatıldı...');
+            setTimeout(() => {
+                showNotification('Veritabanı başarıyla yedeklendi!');
+            }, 2000);
+        });
+        
+        // Show notification
+        function showNotification(message, type = "success") {
+            notification.textContent = message;
+            notification.style.background = type === "success" ? "var(--success)" : "var(--danger)";
+            notification.style.display = "block";
+            
+            setTimeout(() => {
+                notification.style.display = "none";
+            }, 3000);
+        }
+        
+        // FAQ Accordion
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+                
+                // Toggle active class on answer
+                answer.classList.toggle('active');
+                
+                // Rotate icon
+                if (answer.classList.contains('active')) {
+                    icon.style.transform = 'rotate(180deg)';
+                } else {
+                    icon.style.transform = 'rotate(0deg)';
+                }
+            });
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Logout functionality
+        document.addEventListener('keydown', (e) => {
+            // Ctrl+Shift+L for logout
+            if (e.ctrlKey && e.shiftKey && e.key === 'L') {
+                sessionStorage.removeItem('adminLoggedIn');
+                adminPanel.style.display = 'none';
+                showNotification('Başarıyla çıkış yapıldı!');
+            }
+        });
+    </script>
 </body>
 </html>

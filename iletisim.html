@@ -1,159 +1,1275 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <title>İletişim – GOLD METAL</title>
-  <meta name="description" content="GOLD METAL ile iletişime geçin. WhatsApp veya Telegram üzerinden hızlıca mesaj gönderin.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(120deg, #f5fbef 60%, #e8f5e9 100%);
-      margin: 0;
-      padding: 0;
-      color: #2e3d1f;
-    }
-    #container {
-      max-width: 960px;
-      margin: auto;
-      padding: 20px;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 30px;
-      background: linear-gradient(90deg, #d4af37, #fffde7);
-      padding: 30px 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    }
-    header h1 {
-      font-size: 2em;
-      color: #4e5d42;
-    }
-    nav ul {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      list-style: none;
-      padding: 0;
-      flex-wrap: wrap;
-      margin-bottom: 20px;
-    }
-    nav a {
-      background: #dcedc8;
-      color: #2e3d1f;
-      padding: 10px 18px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-    nav a:hover {
-      background: #c5e1a5;
-    }
-    .contact-info {
-      background: #fffde7;
-      padding: 24px;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-      text-align: center;
-      font-size: 1.1em;
-    }
-    .social-buttons {
-      margin-top: 30px;
-      text-align: center;
-    }
-    .social-buttons a {
-      display: inline-block;
-      margin: 8px;
-      padding: 12px 20px;
-      border-radius: 8px;
-      color: #fff;
-      font-weight: bold;
-      text-decoration: none;
-      font-size: 16px;
-      transition: transform 0.2s;
-    }
-    .social-buttons a:hover {
-      transform: scale(1.05);
-    }
-    .whatsapp { background: #25D366; }
-    .telegram { background: #229ED9; }
-    .tiktok { background: #010101; }
-    .back-button {
-      display: inline-block;
-      margin-top: 24px;
-      padding: 12px 24px;
-      background: #4e5d42;
-      color: #fff;
-      border-radius: 8px;
-      font-weight: bold;
-      text-decoration: none;
-      font-size: 16px;
-      transition: background 0.3s;
-    }
-    .back-button:hover {
-      background: #3b4a34;
-    }
-    footer {
-      text-align: center;
-      margin-top: 50px;
-      font-size: 0.9em;
-      color: #666;
-      border-top: 1px solid #ddd;
-      padding-top: 20px;
-    }
-    @media (max-width: 600px) {
-      nav ul {
-        flex-direction: column;
-        align-items: center;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim | GOLD METAL - Premium Altın Eleme Ekipmanları</title>
+    <link rel="icon" href="https://64.media.tumblr.com/c8a2f0b83b63adef6f4bd0ba29de5180/30b24c22617e32d9-04/s1280x1920/5d1e541cc557a65e52c96910aba89ae3f5ba2a84.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --gold: #D4AF37;
+            --dark-gold: #B8860B;
+            --light-gold: #FFD700;
+            --dark: #1a2a0f;
+            --light: #f8f8f0;
+            --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            --admin-blue: #1a3a6c;
+            --admin-light: #f0f5ff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f5dc, #e8e8d8);
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, var(--dark), #2c3e11);
+            padding: 20px 0;
+            box-shadow: var(--shadow);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 3px solid var(--gold);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+            background: #000;
+            overflow: hidden;
+            padding: 5px;
+        }
+        
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        
+        .brand-text {
+            color: white;
+        }
+        
+        .brand-text h1 {
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+            color: var(--light-gold);
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .brand-text p {
+            font-size: 1rem;
+            max-width: 600px;
+            color: #d9d9d9;
+        }
+        
+        /* Navigation */
+        nav {
+            background: linear-gradient(to right, #2c3e11, var(--dark));
+            border-radius: 8px;
+            margin: 15px 0;
+            box-shadow: var(--shadow);
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            flex-wrap: wrap;
+        }
+        
+        nav ul li {
+            margin: 5px;
+        }
+        
+        nav ul li a {
+            display: block;
+            padding: 12px 20px;
+            color: var(--light-gold);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            position: relative;
+            border-radius: 8px;
+        }
+        
+        nav ul li a:hover {
+            color: #fff;
+            background: rgba(212, 175, 55, 0.2);
+        }
+        
+        /* Main Content */
+        main {
+            padding: 40px 0;
+        }
+        
+        .page-title {
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+        
+        .page-title h1 {
+            font-size: 2.5rem;
+            color: var(--dark);
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .page-title h1:after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(to right, var(--gold), var(--dark-gold));
+            border-radius: 2px;
+        }
+        
+        .page-title p {
+            font-size: 1.2rem;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+            border-top: 4px solid var(--gold);
+        }
+        
+        .contact-form {
+            flex: 2;
+            min-width: 300px;
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+            border-top: 4px solid var(--gold);
+        }
+        
+        .info-card {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .info-card:last-child {
+            border-bottom: none;
+        }
+        
+        .info-card h3 {
+            color: var(--dark-gold);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.4rem;
+        }
+        
+        .info-card p {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.1rem;
+            color: #555;
+        }
+        
+        .info-card i {
+            color: var(--gold);
+            min-width: 24px;
+            font-size: 1.2rem;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: var(--gold);
+            color: white;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .social-links a:hover {
+            transform: translateY(-5px);
+            background: var(--dark-gold);
+        }
+        
+        .social-links a.tiktok-main::after {
+            content: "Ana";
+            position: absolute;
+            bottom: -20px;
+            font-size: 0.7rem;
+            color: var(--dark);
+            width: 100%;
+            text-align: center;
+        }
+        
+        .social-links a.tiktok-backup::after {
+            content: "Yedek";
+            position: absolute;
+            bottom: -20px;
+            font-size: 0.7rem;
+            color: var(--dark);
+            width: 100%;
+            text-align: center;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--dark);
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: var(--gold);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+        }
+        
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        .submit-btn {
+            display: inline-block;
+            padding: 14px 30px;
+            background: var(--gold);
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        
+        .submit-btn:hover {
+            background: var(--dark-gold);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .map-container {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            border-top: 4px solid var(--gold);
+            height: 400px;
+        }
+        
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .business-hours {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .day {
+            font-weight: 600;
+            color: var(--dark);
+        }
+        
+        .hours {
+            text-align: right;
+            color: #555;
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(to right, var(--dark), #2c3e11);
+            padding: 40px 0 20px;
+            color: white;
+            text-align: center;
+            position: relative;
+            margin-top: 50px;
+            border-top: 3px solid var(--gold);
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .footer-section {
+            flex: 1;
+            min-width: 300px;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+        
+        .footer-section h3 {
+            color: var(--light-gold);
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-section h3:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--gold);
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #ddd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: var(--light-gold);
+        }
+        
+        .contact-info-footer p {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .copyright {
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: #aaa;
+            margin-top: 20px;
+        }
+        
+        /* Admin Panel Styles */
+        .admin-panel-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--admin-blue);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        
+        .admin-panel-btn:hover {
+            transform: scale(1.1);
+            background: #0f2a5a;
+        }
+        
+        .admin-panel {
+            position: fixed;
+            top: 0;
+            right: -400px;
+            width: 380px;
+            height: 100vh;
+            background: var(--admin-light);
+            box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+            z-index: 1001;
+            transition: all 0.4s ease;
+            overflow-y: auto;
+            padding: 20px;
+        }
+        
+        .admin-panel.active {
+            right: 0;
+        }
+        
+        .admin-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+        
+        .admin-header h2 {
+            color: var(--admin-blue);
+            font-size: 1.5rem;
+        }
+        
+        .close-admin {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #777;
+        }
+        
+        .admin-section {
+            margin-bottom: 25px;
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .admin-section h3 {
+            margin-bottom: 15px;
+            color: var(--admin-blue);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .admin-section h3 i {
+            color: var(--gold);
+        }
+        
+        .admin-login {
+            display: none;
+        }
+        
+        .admin-login.active {
+            display: block;
+        }
+        
+        .admin-form-group {
+            margin-bottom: 15px;
+        }
+        
+        .admin-form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #444;
+        }
+        
+        .admin-form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+        .admin-login-btn {
+            background: var(--admin-blue);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            width: 100%;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+        
+        .admin-login-btn:hover {
+            background: #0f2a5a;
+        }
+        
+        .admin-content {
+            display: none;
+        }
+        
+        .admin-content.active {
+            display: block;
+        }
+        
+        .submission-item {
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+        
+        .submission-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .submission-name {
+            font-weight: bold;
+            color: var(--admin-blue);
+        }
+        
+        .submission-date {
+            font-size: 0.85rem;
+            color: #777;
+        }
+        
+        .submission-details p {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        
+        .admin-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .admin-btn {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .view-btn {
+            background: var(--gold);
+            color: white;
+        }
+        
+        .delete-btn {
+            background: #e74c3c;
+            color: white;
+        }
+        
+        .whatsapp-btn {
+            background: #25D366;
+            color: white;
+        }
+        
+        .telegram-btn {
+            background: #0088cc;
+            color: white;
+        }
+        
+        .formspree-btn {
+            background: #6c5ce7;
+            color: white;
+        }
+        
+        .admin-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            display: none;
+        }
+        
+        .admin-overlay.active {
+            display: block;
+        }
+        
+        .modal-content {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            width: 90%;
+            max-width: 500px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1002;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .modal-header h3 {
+            color: var(--admin-blue);
+        }
+        
+        .close-modal {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #777;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .logo-container {
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li a {
+                padding: 10px 15px;
+            }
+            
+            .page-title h1 {
+                font-size: 2rem;
+            }
+            
+            .contact-container {
+                flex-direction: column;
+            }
+            
+            .footer-section {
+                text-align: center;
+            }
+            
+            .footer-section h3:after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            .admin-panel {
+                width: 100%;
+                right: -100%;
+            }
+        }
+        
+        /* Animations */
+        .fade-in {
+            animation: fadeIn 1s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+    </style>
+    <style>
+/* SOSYAL MEDYA BUTON STİLLERİ */
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 20px;
+  margin: 10px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.social-btn img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+/* WHATSAPP STİLİ */
+.whatsapp {
+  background: #25D366;
+  color: white;
+}
+
+/* TELEGRAM STİLİ */
+.telegram {
+  background: #0088cc;
+  color: white;
+}
+
+/* TIKTOK STİLİ */
+.tiktok {
+  background: #000000;
+  color: white;
+}
+
+/* HOVER EFEKTLERİ */
+.social-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+.social-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+</style>
 </head>
 <body>
-  <div id="container">
-    <header>
-      <h1>İletişim</h1>
-      <p>GOLD MONSTER hakkında bilgi almak için bize hızlıca ulaşın.</p>
-    </header>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="logo-container">
+                    <div class="logo">
+                        <img src="https://64.media.tumblr.com/c8a2f0b83b63adef6f4bd0ba29de5180/30b24c22617e32d9-04/s1280x1920/5d1e541cc557a65e52c96910aba89ae3f5ba2a84.jpg" alt="GOLD METAL Logo">
+                    </div>
+                    <div class="brand-text">
+                        <h1>GOLD METAL</h1>
+                        <p>Premium Altın Eleme Ekipmanları</p>
+                    </div>
+                </div>
+                
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i> Anasayfa</a></li>
+                        <li><a href="gold-metal.html"><i class="fas fa-shopping-cart"></i> Ürünler</a></li>
+                        <li><a href="iletisim.html" class="active"><i class="fas fa-envelope"></i> İletişim</a></li>
+                    </ul>
+                </nav>
+            </div>
+             <!-- WHATSAPP BUTONU -->
+<a href="https://wa.me/905315003285" class="social-btn whatsapp" target="_blank">
+  <img src="whatsapp-icon.png" alt="WhatsApp">
+  WhatsApp
+</a>
+<!-- TELEGRAM BUTONU -->
+<a href="https://t.me/Aykut4181" class="social-btn telegram" target="_blank">
+  <img src="telegram-icon.png" alt="Telegram">
+  Telegram
+</a>
+<!-- TIKTOK BUTONLARI -->
+<a href="https://www.tiktok.com/@goldmetal81" class="social-btn tiktok" target="_blank">
+  <img src="tiktok-icon.png" alt="TikTok">
+  TikTok (Ana Hesap)
+</a>
 
-    <nav>
-      <ul>
-        <li><a href="gold-metal.html">Anasayfa</a></li>
-        <li><a href="sulice-box.html">Ürünler</a></li>
-        <li><a href="iletisim.html">İletişim</a></li>
-      </ul>
-    </nav>
-
-    <main>
-      <div class="contact-info">
-        <p>Form doldurmanıza gerek yok! Aşağıdaki bağlantılardan birine tıklayarak bize doğrudan mesaj gönderebilirsiniz.</p>
-      </div>
-
-      <div class="social-buttons">
-        <a href="https://wa.me/905315003285?text=Merhaba%2C%20GOLD%20MONSTER%20ürününüz%20hakkında%20bilgi%20almak%20istiyorum." target="_blank" class="whatsapp">
-          <i class="fab fa-whatsapp"></i> WhatsApp ile Mesaj Gönder
-        </a>
-        <a href="https://t.me/Aykut4181?start=goldmetal" target="_blank" class="telegram">
-          <i class="fab fa-telegram"></i> Telegram ile Mesaj Gönder
-        </a>
-        <a href="https://www.tiktok.com/@goldmetal81" target="_blank" class="tiktok">
-          <i class="fab fa-tiktok"></i> TikTok'ta Takip Et
-        </a>
-      </div>
-
-      <div style="text-align:center;">
-        <a href="index.html" class="back-button">
-          <i class="fa-solid fa-arrow-left"></i> Ana Ekrana Dön
-        </a>
-      </div>
-    </main>
-
+<a href="https://www.tiktok.com/@goldmetal41" class="social-btn tiktok" target="_blank">
+  <img src="tiktok-icon.png" alt="TikTok">
+  TikTok (Yedek Hesap)
+</a>
+        </header>
+        
+        <main>
+            <div class="page-title fade-in">
+                <h1>Bizimle İletişime Geçin</h1>
+                <p>Profesyonel altın eleme ekipmanları hakkında sorularınız mı var? Uzman ekibimiz size yardımcı olmaktan mutluluk duyacaktır.</p>
+            </div>
+            
+            <div class="contact-container fade-in">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <h3><i class="fas fa-map-marker-alt"></i> Adresimiz</h3>
+                        <p><i class="fas fa-building"></i> GOLD METAL Üretim Tesisleri</p>
+                        <p><i class="fas fa-location-dot"></i> Gebze, Kocaeli, Türkiye</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3><i class="fas fa-phone"></i> İletişim</h3>
+                        <p><i class="fab fa-whatsapp"></i> WhatsApp: +90 531 500 3285</p>
+                        <p><i class="fas fa-phone"></i> Telefon: +90 531 500 3285</p>
+                        <p><i class="fas fa-envelope"></i> Email: goldmetal4181@gmail.com</p>
+                        
+                        <div class="social-links">
+                            <a href="https://wa.me/905315003285" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://t.me/Aykut4181" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
+                            <a href="https://www.tiktok.com/@goldmetal81?_t=ZS-8xuUMYWw9xs&_r=1" target="_blank" class="tiktok-main" title="Ana TikTok Hesabı"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://www.tiktok.com/@goldmetal41?_t=ZS-8xuUS2rff6r&_r=1" target="_blank" class="tiktok-backup" title="Yedek TikTok Hesabı"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3><i class="fas fa-clock"></i> Çalışma Saatleri</h3>
+                        <div class="business-hours">
+                            <div class="day">Pazartesi - Cuma</div>
+                            <div class="hours">09:00 - 18:00</div>
+                            <div class="day">Cumartesi</div>
+                            <div class="hours">10:00 - 16:00</div>
+                            <div class="day">Pazar</div>
+                            <div class="hours">Kapalı</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm" action="https://formspree.io/f/movwoogd" method="POST">
+                        <div class="form-group">
+                            <label for="name">Adınız Soyadınız *</label>
+                            <input type="text" id="name" name="name" required placeholder="Adınız ve soyadınız">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">E-posta Adresiniz *</label>
+                            <input type="email" id="email" name="email" required placeholder="ornek@email.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Telefon Numaranız</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(531) 500 3285">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Konu *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="" disabled selected>Konu seçiniz</option>
+                                <option value="siparis">Sipariş Sorgulama</option>
+                                <option value="urun">Ürün Bilgisi</option>
+                                <option value="teknik">Teknik Destek</option>
+                                <option value="diger">Diğer</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mesajınız *</label>
+                            <textarea id="message" name="message" required placeholder="Mesajınızı buraya yazın..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn pulse">Mesajı Gönder</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="map-container fade-in">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48200.50511629776!2d29.395686!3d40.997222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac9f44c5c5c7d%3A0x5a15d0b2d4b7c9d0!2sGebze%2C%20Kocaeli!5e0!3m2!1str!2str!4v1651503742992!5m2!1str!2str" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </main>
+    </div>
+    
     <footer>
-      <p>&copy; 2025 GOLD METAL Ürünleri – Tüm hakları saklıdır.</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>GOLD METAL</h3>
+                <p>Premium altın eleme ekipmanları ile doğadaki altınlarınızı keşfedin. Profesyonel çözümlerimiz ve yüksek kaliteli ürünlerimizle hizmetinizdeyiz.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Hızlı Erişim</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Anasayfa</a></li>
+                    <li><a href="sulice-box.html"><i class="fas fa-shopping-cart"></i> Ürünler</a></li>
+                    <li><a href="iletisim.html"><i class="fas fa-envelope"></i> İletişim</a></li>
+                    <li><a href="#"><i class="fas fa-question-circle"></i> Sıkça Sorulan Sorular</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>İletişim</h3>
+                <div class="contact-info-footer">
+                    <p><i class="fas fa-map-marker-alt"></i> Gebze, Kocaeli, Türkiye</p>
+                    <p><i class="fas fa-phone"></i> +90 531 500 3285</p>
+                    <p><i class="fas fa-envelope"></i> goldmetal4181@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2025 GOLD METAL Ürünleri – Tüm hakları saklıdır.</p>
+            <p>Altın arama hobisi, yerel yönetmeliklere uygun olarak yapılmalıdır.</p>
+        </div>
     </footer>
-  </div>
+
+    <!-- Admin Panel Button -->
+    <button class="admin-panel-btn">
+        <i class="fas fa-lock"></i>
+    </button>
+
+    <!-- Admin Panel -->
+    <div class="admin-panel">
+        <div class="admin-header">
+            <h2>Yönetici Paneli</h2>
+            <button class="close-admin"><i class="fas fa-times"></i></button>
+        </div>
+
+        <!-- Admin Login Section -->
+        <div class="admin-login active">
+            <div class="admin-section">
+                <h3><i class="fas fa-sign-in-alt"></i> Yönetici Girişi</h3>
+                <div class="admin-form-group">
+                    <label for="admin-username">Kullanıcı Adı</label>
+                    <input type="text" id="admin-username" placeholder="Kullanıcı adınız">
+                </div>
+                <div class="admin-form-group">
+                    <label for="admin-password">Şifre</label>
+                    <input type="password" id="admin-password" placeholder="Şifreniz">
+                </div>
+                <button class="admin-login-btn">Giriş Yap</button>
+            </div>
+        </div>
+
+        <!-- Admin Content Section (Visible after login) -->
+        <div class="admin-content">
+            <div class="admin-section">
+                <h3><i class="fas fa-tachometer-alt"></i> Kontrol Paneli</h3>
+                <div class="admin-stats">
+                    <p>Hoş geldiniz, <strong>GOLDMETAL</strong></p>
+                    <p>Son giriş: <span id="last-login">Bugün, 14:30</span></p>
+                </div>
+            </div>
+
+            <div class="admin-section">
+                <h3><i class="fas fa-envelope"></i> Gelen Mesajlar</h3>
+                <div id="submissions-list">
+                    <!-- Form submissions will be listed here -->
+                    <div class="submission-item">
+                        <div class="submission-header">
+                            <div class="submission-name">Ahmet Yılmaz</div>
+                            <div class="submission-date">10.07.2025</div>
+                        </div>
+                        <div class="submission-details">
+                            <p><strong>Konu:</strong> Ürün Bilgisi</p>
+                            <p><strong>Telefon:</strong> (531) 555 1234</p>
+                            <p><strong>Mesaj:</strong> Goldmonster modeli hakkında bilgi almak istiyorum.</p>
+                        </div>
+                        <div class="admin-actions">
+                            <button class="admin-btn whatsapp-btn">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </button>
+                            <button class="admin-btn telegram-btn">
+                                <i class="fab fa-telegram"></i> Telegram
+                            </button>
+                            <button class="admin-btn formspree-btn">
+                                <i class="fas fa-reply"></i> Formspree
+                            </button>
+                            <button class="admin-btn delete-btn">
+                                <i class="fas fa-trash"></i> Sil
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="submission-item">
+                        <div class="submission-header">
+                            <div class="submission-name">Mehmet Kaya</div>
+                            <div class="submission-date">09.07.2025</div>
+                        </div>
+                        <div class="submission-details">
+                            <p><strong>Konu:</strong> Teknik Destek</p>
+                            <p><strong>Telefon:</strong> (532) 444 5678</p>
+                            <p><strong>Mesaj:</strong> Cihazımda teknik sorun var, yardımcı olabilir misiniz?</p>
+                        </div>
+                        <div class="admin-actions">
+                            <button class="admin-btn whatsapp-btn">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </button>
+                            <button class="admin-btn telegram-btn">
+                                <i class="fab fa-telegram"></i> Telegram
+                            </button>
+                            <button class="admin-btn formspree-btn">
+                                <i class="fas fa-reply"></i> Formspree
+                            </button>
+                            <button class="admin-btn delete-btn">
+                                <i class="fas fa-trash"></i> Sil
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="admin-section">
+                <h3><i class="fas fa-cog"></i> Site Ayarları</h3>
+                <button class="admin-btn" style="background: var(--gold); width: 100%; margin-bottom: 10px;">
+                    <i class="fas fa-edit"></i> İletişim Bilgilerini Düzenle
+                </button>
+                <button class="admin-btn" style="background: var(--gold); width: 100%;">
+                    <i class="fas fa-business-time"></i> Çalışma Saatlerini Düzenle
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Admin Panel Functions
+        const adminPanelBtn = document.querySelector('.admin-panel-btn');
+        const adminPanel = document.querySelector('.admin-panel');
+        const closeAdmin = document.querySelector('.close-admin');
+        const adminLogin = document.querySelector('.admin-login');
+        const adminContent = document.querySelector('.admin-content');
+        const adminLoginBtn = document.querySelector('.admin-login-btn');
+        const adminOverlay = document.querySelector('.admin-overlay');
+
+        // Toggle admin panel
+        adminPanelBtn.addEventListener('click', () => {
+            adminPanel.classList.toggle('active');
+            adminOverlay.classList.toggle('active');
+        });
+
+        // Close admin panel
+        closeAdmin.addEventListener('click', () => {
+            adminPanel.classList.remove('active');
+            adminOverlay.classList.remove('active');
+        });
+
+        // Admin login functionality
+        adminLoginBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const username = document.getElementById('admin-username').value;
+            const password = document.getElementById('admin-password').value;
+            
+            if (username === 'GOLDMETAL' && password === 'Aykut4181') {
+                adminLogin.classList.remove('active');
+                adminContent.classList.add('active');
+                // Update last login time
+                const now = new Date();
+                document.getElementById('last-login').textContent = 
+                    `${now.toLocaleDateString('tr-TR')}, ${now.toLocaleTimeString('tr-TR', {hour: '2-digit', minute:'2-digit'})}`;
+            } else {
+                alert('Hatalı kullanıcı adı veya şifre!');
+            }
+        });
+
+        // Form submission handling
+        document.getElementById('contactForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const form = e.target;
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn.innerHTML;
+            
+            // Gönderim animasyonu
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Gönderiliyor...';
+            submitBtn.disabled = true;
+            
+            try {
+                const formData = new FormData(form);
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+                
+                if (response.ok) {
+                    // Başarılı gönderim
+                    alert('Mesajınız başarıyla gönderildi! En kısa sürede dönüş yapacağız.');
+                    form.reset();
+                    
+                    // Simulate adding to admin panel
+                    const name = document.getElementById('name').value;
+                    const subject = document.getElementById('subject').value;
+                    const phone = document.getElementById('phone').value || 'Belirtilmemiş';
+                    const message = document.getElementById('message').value;
+                    
+                    if (name) {
+                        const now = new Date();
+                        const submissionList = document.getElementById('submissions-list');
+                        
+                        const submissionItem = document.createElement('div');
+                        submissionItem.className = 'submission-item';
+                        submissionItem.innerHTML = `
+                            <div class="submission-header">
+                                <div class="submission-name">${name}</div>
+                                <div class="submission-date">${now.toLocaleDateString('tr-TR')}</div>
+                            </div>
+                            <div class="submission-details">
+                                <p><strong>Konu:</strong> ${document.querySelector(`#subject option[value="${subject}"]`).textContent}</p>
+                                <p><strong>Telefon:</strong> ${phone}</p>
+                                <p><strong>Mesaj:</strong> ${message.substring(0, 50)}${message.length > 50 ? '...' : ''}</p>
+                            </div>
+                            <div class="admin-actions">
+                                <button class="admin-btn whatsapp-btn">
+                                    <i class="fab fa-whatsapp"></i> WhatsApp
+                                </button>
+                                <button class="admin-btn telegram-btn">
+                                    <i class="fab fa-telegram"></i> Telegram
+                                </button>
+                                <button class="admin-btn formspree-btn">
+                                    <i class="fas fa-reply"></i> Formspree
+                                </button>
+                                <button class="admin-btn delete-btn">
+                                    <i class="fas fa-trash"></i> Sil
+                                </button>
+                            </div>
+                        `;
+                        
+                        submissionList.prepend(submissionItem);
+                        
+                        // Add event listeners to new buttons
+                        submissionItem.querySelector('.whatsapp-btn').addEventListener('click', () => {
+                            window.open('https://wa.me/905315003285?text=Merhaba,%20sitenizdeki%20goldmonster%20hakkında%20bilgi%20almak%20istiyorum.', '_blank');
+                        });
+                        
+                        submissionItem.querySelector('.telegram-btn').addEventListener('click', () => {
+                            window.open('https://t.me/Aykut4181', '_blank');
+                        });
+                        
+                        submissionItem.querySelector('.formspree-btn').addEventListener('click', () => {
+                            window.open('https://formspree.io/accounts/login/?next=/f/movwoogd', '_blank');
+                        });
+                        
+                        submissionItem.querySelector('.delete-btn').addEventListener('click', () => {
+                            if (confirm('Bu mesajı silmek istediğinize emin misiniz?')) {
+                                submissionItem.remove();
+                            }
+                        });
+                    }
+                } else {
+                    // Hata durumu
+                    alert('Bir hata oluştu. Lütfen bilgilerinizi kontrol edip tekrar deneyin.');
+                }
+            } catch (error) {
+                // Ağ hatası
+                console.error('Error:', error);
+                alert('Bağlantı hatası oluştu. Lütfen internet bağlantınızı kontrol edin.');
+            } finally {
+                // Butonu eski haline getir
+                submitBtn.innerHTML = originalBtnText;
+                submitBtn.disabled = false;
+            }
+        });
+        
+        // Add event listeners to existing buttons
+        document.querySelectorAll('.whatsapp-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                window.open('https://wa.me/905315003285?text=Merhaba,%20sitenizdeki%20goldmonster%20hakkında%20bilgi%20almak%20istiyorum.', '_blank');
+            });
+        });
+        
+        document.querySelectorAll('.telegram-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                window.open('https://t.me/Aykut4181', '_blank');
+            });
+        });
+        
+        document.querySelectorAll('.formspree-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                window.open('https://formspree.io/accounts/login/?next=/f/movwoogd', '_blank');
+            });
+        });
+        
+        document.querySelectorAll('.delete-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                if (confirm('Bu mesajı silmek istediğinize emin misiniz?')) {
+                    this.closest('.submission-item').remove();
+                }
+            });
+        });
+
+        // Animasyonları tetiklemek
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            fadeElements.forEach(element => {
+                element.style.opacity = 0;
+                element.style.transform = 'translateY(20px)';
+                element.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+                
+                setTimeout(() => {
+                    element.style.opacity = 1;
+                    element.style.transform = 'translateY(0)';
+                }, 200);
+            });
+        });
+    </script>
 </body>
 </html>

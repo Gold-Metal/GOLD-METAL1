@@ -3,16 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GOLD METAL - Dere Altın Eleme Savak Sistemleri. Profesyonel altın arama ekipmanları ve hobi bilgileri.">
+    <meta name="keywords" content="altın, eleme, savak, sistemleri, madencilik, GOLD METAL, altın arama, hobi madenciliği, altın eleme, savak sistemi, altın arama ekipmanları, altın arama hobisi, altın arama teknikleri, doğa aktiviteleri, altın arama seti, altın arama tüyoları, altın arama rehberi, savak sistemi nedir, altın arama nasıl yapılır">
+    <meta name="author" content="GOLD METAL">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.goldmetal.com/">
+    <meta property="og:title" content="GOLD METAL | Dere Altın Eleme Savak Sistemleri">
+    <meta property="og:description" content="Profesyonel altın eleme savak sistemleri ve hobi madenciliği ekipmanları">
+    <meta property="og:image" content="https://64.media.tumblr.com/c8a2f0b83b63adef6f4bd0ba29de5180/30b24c22617e32d9-04/s1280x1920/5d1e541cc557a65e52c96910aba89ae3f5ba2a84.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.goldmetal.com/">
+    <meta property="twitter:title" content="GOLD METAL | Dere Altın Eleme Savak Sistemleri">
+    <meta property="twitter:description" content="Profesyonel altın eleme savak sistemleri ve hobi madenciliği ekipmanları">
+    <meta property="twitter:image" content="https://64.media.tumblr.com/c8a2f0b83b63adef6f4bd0ba29de5180/30b24c22617e32d9-04/s1280x1920/5d1e541cc557a65e52c96910aba89ae3f5ba2a84.jpg">
+    
     <title>GOLD METAL | Dere Altın Eleme Savak Sistemleri</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="https://64.media.tumblr.com/c8a2f0b83b63adef6f4bd0ba29de5180/30b24c22617e32d9-04/s1280x1920/5d1e541cc557a65e52c96910aba89ae3f5ba2a84.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        
         :root {
             --gold: #D4AF37;
             --dark-gold: #B8860B;
@@ -24,8 +36,14 @@
             --danger: #F44336;
             --info: #2196F3;
             --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            --admin-bg: #1e1e2d;
-            --admin-panel: #2a2a3c;
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         
         body {
@@ -44,12 +62,14 @@
             padding: 0 20px;
         }
         
-        /* Header Styles */
+        /* Header Styles - Modernized */
         header {
             background: linear-gradient(135deg, var(--dark), #2c3e11);
-            padding: 20px 0;
+            padding: 15px 0;
             box-shadow: var(--shadow);
-            position: relative;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
         
         .header-content {
@@ -74,6 +94,12 @@
             background: #000;
             overflow: hidden;
             padding: 5px;
+            transition: var(--transition);
+        }
+        
+        .logo:hover {
+            transform: rotate(5deg);
+            box-shadow: 0 0 30px rgba(212, 175, 55, 0.8);
         }
         
         .logo img {
@@ -94,7 +120,7 @@
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
         }
         
-        /* Navigation */
+        /* Navigation - Improved */
         nav {
             background: linear-gradient(to right, #2c3e11, var(--dark));
             border-radius: 8px;
@@ -121,7 +147,7 @@
             text-decoration: none;
             font-weight: bold;
             font-size: 1rem;
-            transition: all 0.3s ease;
+            transition: var(--transition);
             position: relative;
             border-radius: 8px;
         }
@@ -131,26 +157,33 @@
             background: rgba(212, 175, 55, 0.2);
         }
         
-        /* Hero Section */
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: var(--gold);
+            transition: var(--transition);
+            transform: translateX(-50%);
+        }
+        
+        nav ul li a:hover::after {
+            width: 70%;
+        }
+        
+        /* Hero Section - Enhanced */
         .hero {
-            padding: 80px 0;
+            padding: 120px 0;
             text-align: center;
-            background: url('https://images.unsplash.com/photo-1528973085171-9c9e0b0e3c9a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1528973085171-9c9e0b0e3c9a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
             color: white;
             position: relative;
             margin-bottom: 40px;
             border-radius: 15px;
             overflow: hidden;
-        }
-        
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.6);
+            animation: fadeIn 1.5s ease;
         }
         
         .hero-content {
@@ -161,37 +194,57 @@
         }
         
         .hero h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
+            font-size: 2.8rem;
+            margin-bottom: 25px;
             color: var(--light-gold);
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+            animation: slideIn 1s ease;
         }
         
         .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
+            font-size: 1.3rem;
+            margin-bottom: 40px;
             max-width: 700px;
             margin-left: auto;
             margin-right: auto;
+            animation: slideIn 1.2s ease;
         }
         
         .cta-button {
             display: inline-block;
             background: var(--gold);
             color: white;
-            padding: 15px 35px;
+            padding: 16px 40px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: bold;
             font-size: 1.1rem;
-            transition: all 0.3s ease;
+            transition: var(--transition);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+            animation: fadeInUp 1.5s ease;
         }
         
         .cta-button:hover {
             background: var(--dark-gold);
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+        
+        .cta-button::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: 0.5s;
+        }
+        
+        .cta-button:hover::after {
+            left: 100%;
         }
         
         /* Main Content */
@@ -201,14 +254,14 @@
         
         .section-title {
             text-align: center;
-            margin: 40px 0;
+            margin: 60px 0 40px;
             position: relative;
         }
         
         .section-title h2 {
-            font-size: 2.2rem;
+            font-size: 2.5rem;
             color: var(--dark);
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             position: relative;
             display: inline-block;
         }
@@ -216,10 +269,10 @@
         .section-title h2::after {
             content: "";
             position: absolute;
-            bottom: -10px;
+            bottom: -15px;
             left: 50%;
             transform: translateX(-50%);
-            width: 100px;
+            width: 120px;
             height: 4px;
             background: linear-gradient(to right, var(--gold), var(--dark-gold));
             border-radius: 2px;
@@ -238,12 +291,31 @@
             padding: 30px;
             box-shadow: var(--shadow);
             border-top: 4px solid var(--gold);
-            transition: transform 0.3s ease;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
         }
         
         .content-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .content-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: var(--gold);
+            transform: scaleY(0);
+            transform-origin: top;
+            transition: transform 0.5s;
+        }
+        
+        .content-card:hover::before {
+            transform: scaleY(1);
         }
         
         .content-card h3 {
@@ -259,14 +331,19 @@
             margin-bottom: 20px;
             color: #555;
             font-size: 1.1rem;
+            line-height: 1.7;
         }
         
-        /* Device Info */
+        /* Device Info - Modernized */
         .device-info {
             display: flex;
             gap: 40px;
-            margin: 50px 0;
+            margin: 60px 0;
             flex-wrap: wrap;
+            background: rgba(255, 255, 255, 0.7);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
         }
         
         .device-image {
@@ -275,12 +352,22 @@
             border-radius: 15px;
             overflow: hidden;
             box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .device-image:hover {
+            transform: scale(1.02);
         }
         
         .device-image img {
             width: 100%;
             height: auto;
             display: block;
+            transition: transform 0.5s ease;
+        }
+        
+        .device-image:hover img {
+            transform: scale(1.05);
         }
         
         .device-specs {
@@ -314,12 +401,17 @@
             background: #f9f9f9;
         }
         
+        .specs-table tr:hover {
+            background-color: rgba(212, 175, 55, 0.1);
+        }
+        
         /* Hobby Section */
         .hobby-section {
             background: rgba(212, 175, 55, 0.05);
             padding: 40px;
             border-radius: 15px;
-            margin: 50px 0;
+            margin: 60px 0;
+            box-shadow: var(--shadow);
         }
         
         .hobby-grid {
@@ -330,25 +422,33 @@
         
         .hobby-card {
             background: white;
-            padding: 25px;
+            padding: 30px;
             border-radius: 10px;
             box-shadow: var(--shadow);
             text-align: center;
-            transition: all 0.3s ease;
+            transition: var(--transition);
+            border: 2px solid transparent;
         }
         
         .hobby-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            border-color: var(--gold);
         }
         
         .hobby-icon {
-            font-size: 3rem;
+            font-size: 3.5rem;
             color: var(--gold);
             margin-bottom: 20px;
+            transition: var(--transition);
         }
         
-        /* Gallery */
+        .hobby-card:hover .hobby-icon {
+            transform: scale(1.1);
+            color: var(--dark-gold);
+        }
+        
+        /* Gallery - Improved */
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -361,17 +461,24 @@
             overflow: hidden;
             box-shadow: var(--shadow);
             position: relative;
+            height: 250px;
+            transition: var(--transition);
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
         }
         
         .gallery-item img {
             width: 100%;
-            height: 200px;
+            height: 100%;
             object-fit: cover;
-            transition: transform 0.3s ease;
+            transition: transform 0.5s ease;
         }
         
         .gallery-item:hover img {
-            transform: scale(1.05);
+            transform: scale(1.1);
         }
         
         .gallery-caption {
@@ -381,22 +488,33 @@
             right: 0;
             background: rgba(0, 0, 0, 0.7);
             color: white;
-            padding: 10px;
+            padding: 15px;
             text-align: center;
-            font-size: 0.9rem;
+            font-size: 1rem;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
         }
         
-        /* FAQ */
+        .gallery-item:hover .gallery-caption {
+            transform: translateY(0);
+        }
+        
+        /* FAQ - Enhanced */
         .faq-section {
-            margin: 50px 0;
+            margin: 60px 0;
         }
         
         .faq-item {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             background: white;
             border-radius: 10px;
             box-shadow: var(--shadow);
             overflow: hidden;
+            transition: var(--transition);
+        }
+        
+        .faq-item:hover {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
         }
         
         .faq-question {
@@ -408,25 +526,82 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            transition: var(--transition);
+        }
+        
+        .faq-question:hover {
+            background: var(--dark-gold);
         }
         
         .faq-answer {
-            padding: 20px;
-            display: none;
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease, padding 0.5s ease;
         }
         
         .faq-answer.active {
-            display: block;
+            padding: 20px;
+            max-height: 500px;
         }
         
-        /* Footer */
+        /* Social Buttons - Modernized */
+        .social-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        
+        .social-btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: var(--transition);
+            box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+            font-size: 1rem;
+            min-width: 200px;
+            justify-content: center;
+        }
+        
+        .social-btn i {
+            margin-right: 10px;
+            font-size: 1.3rem;
+        }
+        
+        .whatsapp {
+            background: #25D366;
+            color: white;
+        }
+        
+        .telegram {
+            background: #0088cc;
+            color: white;
+        }
+        
+        .tiktok {
+            background: #000000;
+            color: white;
+        }
+        
+        .social-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+        }
+        
+        /* Footer - Enhanced */
         footer {
             background: linear-gradient(to right, var(--dark), #2c3e11);
-            padding: 40px 0 20px;
+            padding: 60px 0 30px;
             color: white;
             position: relative;
-            margin-top: 50px;
+            margin-top: 80px;
             border-top: 3px solid var(--gold);
+            clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
         }
         
         .footer-content {
@@ -442,13 +617,15 @@
             flex: 1;
             min-width: 300px;
             margin-bottom: 30px;
+            padding-right: 20px;
         }
         
         .footer-section h3 {
             color: var(--light-gold);
-            margin-bottom: 20px;
+            margin-bottom: 25px;
             position: relative;
-            padding-bottom: 10px;
+            padding-bottom: 15px;
+            font-size: 1.5rem;
         }
         
         .footer-section h3::after {
@@ -462,214 +639,74 @@
         }
         
         .contact-info-footer p {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
         }
         
         .social-links {
             display: flex;
             gap: 15px;
-            margin-top: 20px;
+            margin-top: 25px;
         }
         
         .social-link {
             display: inline-block;
-            width: 40px;
-            height: 40px;
+            width: 45px;
+            height: 45px;
             background: rgba(255, 255, 255, 0.1);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             color: white;
-            transition: all 0.3s ease;
+            transition: var(--transition);
+            font-size: 1.2rem;
         }
         
         .social-link:hover {
             background: var(--gold);
-            transform: translateY(-3px);
+            transform: translateY(-5px);
         }
         
         .copyright {
-            padding-top: 20px;
+            padding-top: 30px;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             font-size: 0.9rem;
             color: #aaa;
             margin-top: 20px;
             text-align: center;
+            max-width: 1200px;
+            margin: 30px auto 0;
         }
         
-        /* Admin Panel Button */
-        .admin-panel-btn {
-            position: fixed;
-            top: 30px;
-            right: 30px;
-            background: var(--admin-bg);
-            color: white;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-            cursor: pointer;
-            z-index: 1000;
-            transition: all 0.3s ease;
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
         
-        .admin-panel-btn:hover {
-            background: var(--dark);
-            transform: rotate(30deg);
+        @keyframes slideIn {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
         }
         
-        /* Admin Panel */
-        .admin-panel {
-            position: fixed;
-            top: 0;
-            right: 0;
-            width: 100%;
-            max-width: 450px;
-            height: 100vh;
-            background: var(--admin-bg);
-            box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
-            z-index: 1002;
-            display: none;
-            flex-direction: column;
-            color: white;
-        }
-        
-        .admin-header {
-            background: var(--dark);
-            padding: 15px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 2px solid var(--gold);
-        }
-        
-        .admin-header h3 {
-            color: var(--light-gold);
-        }
-        
-        .close-admin-panel {
-            background: none;
-            border: none;
-            color: white;
-            font-size: 20px;
-            cursor: pointer;
-        }
-        
-        .admin-tabs {
-            display: flex;
-            background: #2a2a3c;
-        }
-        
-        .admin-tab {
-            flex: 1;
-            padding: 15px;
-            text-align: center;
-            cursor: pointer;
-            transition: background 0.3s ease;
-            border-bottom: 2px solid transparent;
-        }
-        
-        .admin-tab.active {
-            background: var(--admin-bg);
-            border-bottom: 2px solid var(--gold);
-        }
-        
-        .admin-tab:hover:not(.active) {
-            background: #333346;
-        }
-        
-        .admin-content {
-            flex: 1;
-            overflow-y: auto;
-            padding: 20px;
-        }
-        
-        .admin-section {
-            display: none;
-        }
-        
-        .admin-section.active {
-            display: block;
-        }
-        
-        /* Page Editor */
-        .editor-controls {
-            margin-bottom: 20px;
-        }
-        
-        .editor-btn {
-            padding: 10px 15px;
-            background: var(--gold);
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-right: 10px;
-            transition: background 0.3s;
-        }
-        
-        .editor-btn:hover {
-            background: var(--dark-gold);
-        }
-        
-        .editor-btn.save {
-            background: var(--success);
-        }
-        
-        .editor-btn.cancel {
-            background: var(--danger);
-        }
-        
-        .editable-content {
-            padding: 15px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 5px;
-            margin-bottom: 15px;
-        }
-        
-        .editable-content h4 {
-            color: var(--light-gold);
-            margin-bottom: 10px;
-            border-bottom: 1px solid var(--gold);
-            padding-bottom: 5px;
-        }
-        
-        .editable-content textarea {
-            width: 100%;
-            min-height: 100px;
-            padding: 10px;
-            background: rgba(0, 0, 0, 0.3);
-            border: 1px solid #444;
-            border-radius: 5px;
-            color: white;
-            margin-bottom: 10px;
-        }
-        
-        .editable-content input {
-            width: 100%;
-            padding: 10px;
-            background: rgba(0, 0, 0, 0.3);
-            border: 1px solid #444;
-            border-radius: 5px;
-            color: white;
-            margin-bottom: 10px;
-        }
-        
-        .admin-actions {
-            margin-top: 20px;
-            display: flex;
-            gap: 10px;
+        @keyframes fadeInUp {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
         }
         
         /* Responsive Design */
+        @media (max-width: 992px) {
+            .hero h2 {
+                font-size: 2.3rem;
+            }
+            .hero p {
+                font-size: 1.1rem;
+            }
+        }
+        
         @media (max-width: 768px) {
             .header-content {
                 flex-direction: column;
@@ -690,30 +727,63 @@
                 flex-direction: column;
             }
             
+            .hero {
+                padding: 80px 0;
+            }
+            
             .hero h2 {
                 font-size: 2rem;
             }
             
-            .admin-panel {
-                max-width: 100%;
-                width: 100%;
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            
+            .footer-section h3::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            .social-links {
+                justify-content: center;
             }
         }
         
-        /* Notification */
-        .notification {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background: var(--success);
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
-            z-index: 2000;
-            display: none;
+        @media (max-width: 480px) {
+            .hero h2 {
+                font-size: 1.8rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .cta-button {
+                padding: 14px 30px;
+                font-size: 1rem;
+            }
+            
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+            
+            .content-card, .hobby-card {
+                padding: 20px;
+            }
+            
+            .social-btn {
+                min-width: 100%;
+            }
         }
     </style>
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="918b405e-a8a8-499c-9695-94195b3c939b";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})(); 
+    </script>
 </head>
 <body>
     <div class="container">
@@ -731,10 +801,9 @@
                 
                 <nav>
                     <ul>
-                        <!-- Butonların bağlantıları değiştirildi -->
                         <li><a href="gold-metal.html"><i class="fas fa-shopping-cart"></i> Ürün</a></li>
                         <li><a href="#hobi"><i class="fas fa-gem"></i> Hobi Bilgileri</a></li>
-                        <li><a href="iletişim.html"><i class="fas fa-envelope"></i> İletişim</a></li>
+                        <li><a href="#iletisim"><i class="fas fa-envelope"></i> İletişim</a></li>
                     </ul>
                 </nav>
             </div>
@@ -747,6 +816,22 @@
                 <a href="#urun" class="cta-button">Ürünü İncele <i class="fas fa-arrow-right"></i></a>
             </div>
         </section>
+        
+        <!-- Social Media Buttons - Modern Placement -->
+        <div class="social-buttons">
+            <a href="https://wa.me/905315003285" class="social-btn whatsapp" target="_blank">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+            <a href="https://t.me/Aykut4181" class="social-btn telegram" target="_blank">
+                <i class="fab fa-telegram"></i> Telegram
+            </a>
+            <a href="https://www.tiktok.com/@goldmetal81" class="social-btn tiktok" target="_blank">
+                <i class="fab fa-tiktok"></i> TikTok (Ana Hesap)
+            </a>
+            <a href="https://www.tiktok.com/@goldmetal41" class="social-btn tiktok" target="_blank">
+                <i class="fab fa-tiktok"></i> TikTok (Yedek Hesap)
+            </a>
+        </div>
         
         <main>
             <section id="urun">
@@ -951,27 +1036,33 @@
                         <p><i class="fas fa-map-marker-alt"></i> Gebze, Kocaeli, Türkiye</p>
                         <p><i class="fas fa-phone"></i> +90 531 500 3285</p>
                         <p><i class="fas fa-envelope"></i> info@goldmetal.com</p>
+                        <p><i class="fas fa-clock"></i> 09:00 - 18:00 (Pazartesi - Cumartesi)</p>
                     </div>
                     
                     <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="https://wa.me/905315003285" class="social-link" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/goldmetal_41?igsh=ZW1mYjA3OGNtZ3hk" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/gold.metal41" class="social-link" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://youtube.com/@goldmetal41" class="social-link" target="_blank"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 
                 <div class="footer-section">
                     <h3>Hızlı Linkler</h3>
-                    <p><a href="gold-metal.html" style="color: #ddd; text-decoration: none;">Anasayfa</a></p>
-                    <p><a href="sulice-box.html" style="color: #ddd; text-decoration: none;">Ürün Özellikleri</a></p>
+                    <p><a href="index.html" style="color: #ddd; text-decoration: none;">Anasayfa</a></p>
+                    <p><a href="gold-metal.html" style="color: #ddd; text-decoration: none;">Ürün Özellikleri</a></p>
                     <p><a href="#hobi" style="color: #ddd; text-decoration: none;">Hobi Bilgileri</a></p>
-                    <p><a href="iletişim.html" style="color: #ddd; text-decoration: none;">İletişim</a></p>
+                    <p><a href="#iletisim" style="color: #ddd; text-decoration: none;">İletişim</a></p>
+                    <p><a href="#" style="color: #ddd; text-decoration: none;">SSS</a></p>
                 </div>
                 
                 <div class="footer-section">
                     <h3>Hakkımızda</h3>
                     <p>GOLD METAL, doğa severler ve hobi madencileri için yüksek kaliteli altın eleme ekipmanları üretir. Ürünlerimiz hafif, dayanıklı ve çevre dostu malzemelerden üretilmiştir.</p>
+                    <div style="margin-top: 20px; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 8px;">
+                        <h4><i class="fas fa-award"></i> Kalite Garantisi</h4>
+                        <p>Tüm ürünlerimiz titiz kalite kontrol süreçlerinden geçmektedir.</p>
+                    </div>
                 </div>
             </div>
             
@@ -982,278 +1073,7 @@
         </footer>
     </div>
     
-    <!-- Admin Panel Button -->
-    <div class="admin-panel-btn">
-        <i class="fas fa-cog"></i>
-    </div>
-    
-    <!-- Admin Panel -->
-    <div class="admin-panel">
-        <div class="admin-header">
-            <h3>Yönetici Paneli</h3>
-            <button class="close-admin-panel"><i class="fas fa-times"></i></button>
-        </div>
-        <div class="admin-tabs">
-            <div class="admin-tab active" data-tab="content">İçerik Yönetimi</div>
-            <div class="admin-tab" data-tab="images">Resim Yönetimi</div>
-            <div class="admin-tab" data-tab="settings">Sistem Ayarları</div>
-        </div>
-        <div class="admin-content">
-            <!-- Content Management Section -->
-            <div class="admin-section active" id="content-management">
-                <h4>Sayfa İçeriklerini Düzenle</h4>
-                <p>Bu bölümden web sayfasındaki tüm içerikleri düzenleyebilirsiniz.</p>
-                
-                <div class="editable-content">
-                    <h4>Ana Başlık</h4>
-                    <input type="text" id="main-title" value="Profesyonel Altın Eleme Savak Sistemi">
-                </div>
-                
-                <div class="editable-content">
-                    <h4>Ana Açıklama</h4>
-                    <textarea id="main-description">Dere yataklarında kırıntı altın arama hobisini bir üst seviyeye taşıyın. Hafif, dayanıklı ve yüksek verimli ekipmanlarımızla doğanın gizli hazinelerini keşfedin.</textarea>
-                </div>
-                
-                <div class="editable-content">
-                    <h4>Ürün Açıklaması</h4>
-                    <textarea id="product-description">Profesyonel altın eleme setimiz, en zorlu doğa koşullarında bile üstün performans sunacak şekilde tasarlanmıştır.</textarea>
-                </div>
-                
-                <div class="editable-content">
-                    <h4>Teknik Özellikler</h4>
-                    <div class="specs-editor">
-                        <table>
-                            <tr>
-                                <th>Özellik</th>
-                                <th>Değer</th>
-                            </tr>
-                            <tr>
-                                <td><input type="text" value="Malzeme"></td>
-                                <td><input type="text" value="Hafif Alüminyum Alaşım"></td>
-                            </tr>
-                            <tr>
-                                <td><input type="text" value="Ağırlık"></td>
-                                <td><input type="text" value="8.5kg (motor dahil)"></td>
-                            </tr>
-                            <tr>
-                                <td><input type="text" value="Pompa Uyumu"></td>
-                                <td><input type="text" value="Sintine Pompası ile Tam Uyum"></td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-                
-                <div class="admin-actions">
-                    <button class="editor-btn save" id="save-content">Değişiklikleri Kaydet</button>
-                    <button class="editor-btn cancel" id="cancel-changes">İptal</button>
-                </div>
-            </div>
-            
-            <!-- Image Management Section -->
-            <div class="admin-section" id="image-management">
-                <h4>Resim Yönetimi</h4>
-                <p>Bu bölümden web sayfasındaki resimleri değiştirebilirsiniz.</p>
-                
-                <div class="editable-content">
-                    <h4>Logo Resmi</h4>
-                    <input type="text" id="logo-url" value="https://64.media.tumblr.com/c8a2f0b83b63adef6f4bd0ba29de5180/30b24c22617e32d9-04/s1280x1920/5d1e541cc557a65e52c96910aba89ae3f5ba2a84.jpg">
-                    <button class="editor-btn" id="update-logo">Güncelle</button>
-                </div>
-                
-                <div class="editable-content">
-                    <h4>Ürün Resmi</h4>
-                    <input type="text" id="product-image" value="https://64.media.tumblr.com/5d2289f5c4a820a5410f88049c919410/743dab049bde52d7-9d/s1280x1920/d110e38d2a3bf4fca8b8039e88485c9f541b051f.jpg">
-                    <button class="editor-btn" id="update-product-image">Güncelle</button>
-                </div>
-                
-                <div class="editable-content">
-                    <h4>Galeri Resimleri</h4>
-                    <div class="gallery-editor">
-                        <div>
-                            <input type="text" value="https://64.media.tumblr.com/ef3290d71c781436ae2c5d24864105d2/0cce1380112f7753-a4/s250x400/8f81791e6126ea44734abac1afe0cb09d372a9cb.jpg">
-                        </div>
-                        <div>
-                            <input type="text" value="https://64.media.tumblr.com/a2bfabcb22f14ab4cdacdfade5adc3b7/ecd8e77b36e1bb45-90/s250x400/df6d8481875c72268f8cb44af7b7634845bb2a83.jpg">
-                        </div>
-                        <div>
-                            <input type="text" value="https://64.media.tumblr.com/6a2ffd61c8529387a7f2f4b416923a95/9f414f4672f7a770-bb/s400x600/a07aee0b3f3cd025ced6525258aa6e5cc324eeba.jpg">
-                        </div>
-                    </div>
-                    <button class="editor-btn" id="update-gallery">Galeriyi Güncelle</button>
-                </div>
-            </div>
-            
-            <!-- Settings Section -->
-            <div class="admin-section" id="settings-management">
-                <h4>Sistem Ayarları</h4>
-                <p>Bu bölümden genel sistem ayarlarını yapılandırabilirsiniz.</p>
-                
-                <div class="editable-content">
-                    <h4>Şirket Bilgileri</h4>
-                    <div>
-                        <label>Şirket Adı:</label>
-                        <input type="text" id="company-name" value="GOLD METAL">
-                    </div>
-                    <div>
-                        <label>Telefon:</label>
-                        <input type="text" id="company-phone" value="+90 531 500 3285">
-                    </div>
-                    <div>
-                        <label>E-posta:</label>
-                        <input type="text" id="company-email" value="info@goldmetal.com">
-                    </div>
-                </div>
-                
-                <div class="editable-content">
-                    <h4>Güvenlik</h4>
-                    <div>
-                        <label>Yönetici Kullanıcı Adı:</label>
-                        <input type="text" id="admin-username" value="GOLDMETAL" disabled>
-                    </div>
-                    <div>
-                        <label>Yeni Şifre:</label>
-                        <input type="password" id="new-password" placeholder="Yeni şifre girin">
-                    </div>
-                    <div>
-                        <label>Şifreyi Onayla:</label>
-                        <input type="password" id="confirm-password" placeholder="Şifreyi tekrar girin">
-                    </div>
-                    <button class="editor-btn" id="update-password">Şifreyi Güncelle</button>
-                </div>
-                
-                <div class="editable-content">
-                    <h4>Veritabanı Yedekleme</h4>
-                    <button class="editor-btn" id="backup-db">Veritabanını Yedekle</button>
-                    <button class="editor-btn" id="restore-db">Yedekten Geri Yükle</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Notification -->
-    <div class="notification" id="notification">
-        Değişiklikler kaydedildi!
-    </div>
-    
     <script>
-        // Admin Panel Functionality
-        const adminBtn = document.querySelector('.admin-panel-btn');
-        const adminPanel = document.querySelector('.admin-panel');
-        const closeAdminPanel = document.querySelector('.close-admin-panel');
-        const adminTabs = document.querySelectorAll('.admin-tab');
-        const adminSections = document.querySelectorAll('.admin-section');
-        const notification = document.getElementById('notification');
-        
-        // Show admin panel
-        adminBtn.addEventListener('click', () => {
-            const isLoggedIn = sessionStorage.getItem('adminLoggedIn') === 'true';
-            
-            if (isLoggedIn) {
-                adminPanel.style.display = 'flex';
-            } else {
-                // Show login prompt
-                const username = prompt("Kullanıcı Adı:");
-                const password = prompt("Şifre:");
-                
-                if (username === "GOLDMETAL" && password === "Aykut4181") {
-                    sessionStorage.setItem('adminLoggedIn', 'true');
-                    adminPanel.style.display = 'flex';
-                    showNotification('Başarıyla giriş yapıldı!');
-                } else {
-                    showNotification('Hatalı kullanıcı adı veya şifre!', "error");
-                }
-            }
-        });
-        
-        // Close admin panel
-        closeAdminPanel.addEventListener('click', () => {
-            adminPanel.style.display = 'none';
-        });
-        
-        // Switch admin tabs
-        adminTabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                // Remove active class from all tabs
-                adminTabs.forEach(t => t.classList.remove('active'));
-                
-                // Add active class to clicked tab
-                tab.classList.add('active');
-                
-                // Hide all sections
-                adminSections.forEach(section => {
-                    section.classList.remove('active');
-                });
-                
-                // Show selected section
-                const tabName = tab.getAttribute('data-tab');
-                document.getElementById(`${tabName}-management`).classList.add('active');
-            });
-        });
-        
-        // Save content changes
-        document.getElementById('save-content').addEventListener('click', () => {
-            // Update main title
-            const mainTitle = document.getElementById('main-title').value;
-            document.querySelector('.hero h2').textContent = mainTitle;
-            
-            // Update main description
-            const mainDescription = document.getElementById('main-description').value;
-            document.querySelector('.hero p').textContent = mainDescription;
-            
-            // Update product description
-            const productDescription = document.getElementById('product-description').value;
-            document.querySelector('.device-specs p').textContent = productDescription;
-            
-            showNotification('İçerik başarıyla güncellendi!');
-        });
-        
-        // Update logo
-        document.getElementById('update-logo').addEventListener('click', () => {
-            const logoUrl = document.getElementById('logo-url').value;
-            document.querySelector('.logo img').src = logoUrl;
-            showNotification('Logo başarıyla güncellendi!');
-        });
-        
-        // Update product image
-        document.getElementById('update-product-image').addEventListener('click', () => {
-            const productImage = document.getElementById('product-image').value;
-            document.querySelector('.device-image img').src = productImage;
-            showNotification('Ürün resmi başarıyla güncellendi!');
-        });
-        
-        // Update password
-        document.getElementById('update-password').addEventListener('click', () => {
-            const newPassword = document.getElementById('new-password').value;
-            const confirmPassword = document.getElementById('confirm-password').value;
-            
-            if (newPassword && newPassword === confirmPassword) {
-                showNotification('Şifre başarıyla güncellendi!');
-                document.getElementById('new-password').value = '';
-                document.getElementById('confirm-password').value = '';
-            } else {
-                showNotification('Şifreler eşleşmiyor!', "error");
-            }
-        });
-        
-        // Backup database
-        document.getElementById('backup-db').addEventListener('click', () => {
-            showNotification('Veritabanı yedeklemesi başlatıldı...');
-            setTimeout(() => {
-                showNotification('Veritabanı başarıyla yedeklendi!');
-            }, 2000);
-        });
-        
-        // Show notification
-        function showNotification(message, type = "success") {
-            notification.textContent = message;
-            notification.style.background = type === "success" ? "var(--success)" : "var(--danger)";
-            notification.style.display = "block";
-            
-            setTimeout(() => {
-                notification.style.display = "none";
-            }, 3000);
-        }
-        
         // FAQ Accordion
         const faqQuestions = document.querySelectorAll('.faq-question');
         
@@ -1285,14 +1105,28 @@
             });
         });
         
-        // Logout functionality
-        document.addEventListener('keydown', (e) => {
-            // Ctrl+Shift+L for logout
-            if (e.ctrlKey && e.shiftKey && e.key === 'L') {
-                sessionStorage.removeItem('adminLoggedIn');
-                adminPanel.style.display = 'none';
-                showNotification('Başarıyla çıkış yapıldı!');
-            }
+        // Add active class to navigation links when scrolled to section
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('nav ul li a');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                }
+            });
         });
     </script>
 </body>
